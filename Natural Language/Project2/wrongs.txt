@@ -1,0 +1,1962 @@
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: The amiable former name of the Tongan archipelago
+Answer: the Friendly Islands
+Nouns: ['The amiable former name', 'the Tongan archipelago', 'the Friendly Islands']
+Verbs: []
+Matches: 0
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: LITERATURE
+Question: PBS fans know that Evening at Pops refers to this city's Pops
+Answer: Boston
+Nouns: ['PBS fans', 'Evening', 'Pops', "this city's Pops", 'Boston']
+Verbs: ['know', 'refer']
+Matches: 6
+ -> HISTORY: {'Boston': 2, 'know': 75, 'refer': 10}
+ -> SCIENCE: {'know': 42, 'refer': 12}
+ -> LITERATURE: {'Evening': 1, 'Boston': 4, 'know': 45, 'refer': 12}
+ -> MUSIC: {'Boston': 1, 'know': 67, 'refer': 9}
+ -> GEOGRAPHY: {'Boston': 1, 'know': 42, 'refer': 5}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: LITERATURE
+Question: In 1843 Congress allocated $30,000 to string one between Baltimore & Washington; it was completed in 1844
+Answer: a telegraph wire
+Nouns: ['Congress', 'Baltimore', 'Washington', 'it', 'a telegraph wire']
+Verbs: ['allocate', 'string', 'complete']
+Matches: 10
+ -> HISTORY: {'Congress': 28, 'Washington': 7, 'it': 188, 'string': 1, 'complete': 8}
+ -> SCIENCE: {'it': 176, 'complete': 1}
+ -> LITERATURE: {'Congress': 3, 'Baltimore': 1, 'Washington': 2, 'it': 72, 'string': 1, 'complete': 6}
+ -> MUSIC: {'Congress': 1, 'Baltimore': 3, 'Washington': 1, 'it': 156, 'string': 15, 'complete': 10}
+ -> GEOGRAPHY: {'Congress': 1, 'Baltimore': 2, 'Washington': 1, 'it': 81, 'complete': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: The Babylonians kept abreast of the times using a form of this instrument seen here:
+Answer: Sundial
+Nouns: ['The Babylonians', 'the times', 'a form', 'this instrument']
+Verbs: ['keep', 'use', 'see']
+Matches: 7
+ -> HISTORY: {'a form': 2, 'this instrument': 1, 'keep': 12, 'use': 45, 'see': 46}
+ -> SCIENCE: {'a form': 2, 'this instrument': 4, 'keep': 1, 'use': 83, 'see': 17}
+ -> LITERATURE: {'keep': 9, 'use': 30, 'see': 21}
+ -> MUSIC: {'a form': 2, 'this instrument': 53, 'keep': 5, 'use': 44, 'see': 35}
+ -> GEOGRAPHY: {'keep': 1, 'use': 4, 'see': 9}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: LITERATURE
+Question: Dying in 2009 at age 113, British WWI vet Henry Allingham was the last original surviving member of this group, formed 1918
+Answer: the Royal Air Force
+Nouns: ['age', 'British WWI vet Henry Allingham', 'the last original surviving member', 'this group', 'the Royal Air Force']
+Verbs: ['die', 'survive', 'form']
+Matches: 9
+ -> HISTORY: {'age': 10, 'this group': 12, 'die': 43, 'survive': 7, 'form': 23}
+ -> SCIENCE: {'age': 2, 'this group': 1, 'die': 11, 'form': 23}
+ -> LITERATURE: {'age': 9, 'this group': 2, 'the Royal Air Force': 1, 'die': 28, 'survive': 2, 'form': 1}
+ -> MUSIC: {'age': 7, 'this group': 25, 'die': 14, 'survive': 1, 'form': 8}
+ -> GEOGRAPHY: {'die': 1, 'form': 17}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: LITERATURE
+Question: Blink-182: That's about the time she walked away from me, nobody likes you when you're ___
+Answer: 23
+Nouns: ['Blink-182', 'about the time', 'she', 'me', 'nobody', 'you', 'you', '_', '_']
+Verbs: ['walk', 'like', 'be']
+Matches: 17
+ -> HISTORY: {'she': 65, 'me': 4, 'you': 16, '_': 12, 'walk': 5, 'like': 3, 'be': 135}
+ -> SCIENCE: {'she': 7, 'me': 1, 'you': 52, 'like': 2, 'be': 76}
+ -> LITERATURE: {'she': 58, 'me': 10, 'nobody': 2, 'you': 27, '_': 11, 'walk': 2, 'like': 7, 'be': 142}
+ -> MUSIC: {'she': 38, 'me': 28, 'you': 83, '_': 144, 'walk': 6, 'like': 10, 'be': 204}
+ -> GEOGRAPHY: {'she': 1, 'me': 1, 'you': 24, 'walk': 3, 'like': 1, 'be': 42}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: His 1543 book Concerning the Revolutions of the Celestial Spheres started an astronomical revolution
+Answer: Nicholas Copernicus
+Nouns: ['His 1543 book', 'the Revolutions', 'the Celestial Spheres', 'an astronomical revolution', 'Nicholas Copernicus']
+Verbs: ['concern', 'start']
+Matches: 2
+ -> HISTORY: {'concern': 1, 'start': 10}
+ -> SCIENCE: {'start': 3}
+ -> LITERATURE: {'concern': 1, 'start': 4}
+ -> MUSIC: {'concern': 3, 'start': 12}
+ -> GEOGRAPHY: {'start': 3}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: Welcome MCR, this alt-rock group, to The Black Parade, its 2006 concept album
+Answer: My Chemical Romance
+Nouns: ['this alt-rock group', 'The Black Parade', 'its 2006 concept album', 'My Chemical Romance']
+Verbs: []
+Matches: 0
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: Rebels took the post office in this city during their rising on Easter Monday, 1916
+Answer: Dublin
+Nouns: ['Rebels', 'the post office', 'this city', 'their', 'Easter Monday', 'Dublin']
+Verbs: ['take', 'rise']
+Matches: 6
+ -> HISTORY: {'this city': 40, 'Dublin': 2, 'take': 59, 'rise': 3}
+ -> SCIENCE: {'this city': 2, 'take': 18, 'rise': 2}
+ -> LITERATURE: {'this city': 6, 'Dublin': 1, 'take': 43, 'rise': 5}
+ -> MUSIC: {'this city': 9, 'take': 48, 'rise': 4}
+ -> GEOGRAPHY: {'this city': 19, 'take': 5, 'rise': 14}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: To accuse someone of being dopey, crude or just unevolved, you can call him this, from a valley near Dusseldorf
+Answer: a Neanderthal
+Nouns: ['someone', 'you', 'him', 'a valley', 'Dusseldorf']
+Verbs: ['accuse', 'be', 'call']
+Matches: 9
+ -> HISTORY: {'someone': 1, 'you': 16, 'him': 51, 'accuse': 4, 'be': 135, 'call': 73}
+ -> SCIENCE: {'someone': 1, 'you': 52, 'him': 11, 'be': 76, 'call': 74}
+ -> LITERATURE: {'someone': 1, 'you': 27, 'him': 54, 'accuse': 1, 'be': 142, 'call': 76}
+ -> MUSIC: {'someone': 2, 'you': 83, 'him': 29, 'accuse': 1, 'be': 204, 'call': 58}
+ -> GEOGRAPHY: {'you': 24, 'him': 2, 'be': 42, 'call': 39}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: LITERATURE
+Question: Founded in 1702, Mobile in this state became the City of Six Flags (but it doesn't have a Six Flags theme park)
+Answer: Alabama
+Nouns: ['Mobile', 'this state', 'the City', 'Six Flags', 'it', 'a Six Flags theme park', 'Alabama']
+Verbs: ['found', 'become', 'have']
+Matches: 11
+ -> HISTORY: {'this state': 18, 'it': 188, 'Alabama': 4, 'found': 61, 'become': 173, 'have': 95}
+ -> SCIENCE: {'this state': 5, 'it': 176, 'Alabama': 1, 'found': 3, 'become': 29, 'have': 99}
+ -> LITERATURE: {'this state': 6, 'the City': 1, 'it': 72, 'Alabama': 1, 'found': 5, 'become': 34, 'have': 58}
+ -> MUSIC: {'this state': 5, 'the City': 1, 'it': 156, 'Alabama': 3, 'found': 1, 'become': 33, 'have': 120}
+ -> GEOGRAPHY: {'Mobile': 1, 'this state': 30, 'it': 81, 'Alabama': 4, 'found': 13, 'become': 11, 'have': 46}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: This man's aria Ombra Mai Fu from Xerxes is not as famous as his Hallelujah Chorus
+Answer: Handel
+Nouns: ["This man's aria Ombra Mai Fu", 'Xerxes', 'his Hallelujah Chorus', 'Handel']
+Verbs: []
+Matches: 2
+ -> HISTORY: {'Xerxes': 1}
+ -> SCIENCE: {}
+ -> LITERATURE: {}
+ -> MUSIC: {'Handel': 8}
+ -> GEOGRAPHY: {'Xerxes': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: The eggs of the Japanese species of this small game bird were studied on the Mir Space Station
+Answer: quail
+Nouns: ['The eggs', 'the Japanese species', 'this small game bird', 'the Mir Space Station', 'quail']
+Verbs: ['study']
+Matches: 1
+ -> HISTORY: {'study': 1}
+ -> SCIENCE: {'study': 16}
+ -> LITERATURE: {'study': 6}
+ -> MUSIC: {'study': 5}
+ -> GEOGRAPHY: {'study': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: With 4 patents in 1933, Edwin H. Armstrong is credited as the sole inventor of this radio system
+Answer: FM (Frequency Modulation)
+Nouns: ['4 patents', 'Edwin H. Armstrong', 'the sole inventor', 'this radio system', 'FM', 'Frequency Modulation']
+Verbs: ['credit']
+Matches: 1
+ -> HISTORY: {'credit': 2}
+ -> SCIENCE: {'credit': 1}
+ -> LITERATURE: {'credit': 3}
+ -> MUSIC: {'credit': 3}
+ -> GEOGRAPHY: {'credit': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: French for study, it's a musical piece intended to help students improve their technique
+Answer: Etude
+Nouns: ['study', 'it', 'a musical piece', 'students', 'their technique', 'Etude']
+Verbs: ['intend', 'help', 'improve']
+Matches: 7
+ -> HISTORY: {'study': 1, 'it': 188, 'intend': 1, 'help': 21, 'improve': 4}
+ -> SCIENCE: {'study': 2, 'it': 176, 'help': 14, 'improve': 4}
+ -> LITERATURE: {'it': 72, 'intend': 1, 'help': 15}
+ -> MUSIC: {'it': 156, 'intend': 2, 'help': 16}
+ -> GEOGRAPHY: {'it': 81}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: SCIENCE
+Question: This Russian-born author & scientist who died in 1992 said, I do not fear computers.  I fear the lack of them
+Answer: Isaac Asimov
+Nouns: ['This Russian-born author', 'scientist', 'who', 'I', 'computers', 'I', 'the lack', 'them', 'Isaac Asimov']
+Verbs: ['bear', 'die', 'say', 'fear', 'fear']
+Matches: 17
+ -> HISTORY: {'who': 91, 'I': 69, 'them': 22, 'bear': 30, 'die': 43, 'say': 58, 'fear': 1}
+ -> SCIENCE: {'who': 30, 'I': 2, 'computers': 1, 'them': 17, 'Isaac Asimov': 1, 'bear': 15, 'die': 11, 'say': 25, 'fear': 1}
+ -> LITERATURE: {'who': 102, 'I': 103, 'them': 8, 'Isaac Asimov': 2, 'bear': 44, 'die': 28, 'say': 79, 'fear': 2}
+ -> MUSIC: {'who': 67, 'I': 205, 'them': 10, 'bear': 30, 'die': 14, 'say': 44}
+ -> GEOGRAPHY: {'who': 15, 'I': 4, 'them': 1, 'bear': 6, 'die': 1, 'say': 5}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: ...& the Mechanics
+Answer: Mike
+Nouns: ['the Mechanics', 'Mike']
+Verbs: []
+Matches: 2
+ -> HISTORY: {'Mike': 1}
+ -> SCIENCE: {'Mike': 1}
+ -> LITERATURE: {}
+ -> MUSIC: {}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: The double bassoon is also known by this name
+Answer: Contrabassoon
+Nouns: ['The double bassoon', 'this name', 'Contrabassoon']
+Verbs: ['know']
+Matches: 3
+ -> HISTORY: {'this name': 11, 'know': 75}
+ -> SCIENCE: {'this name': 3, 'know': 42}
+ -> LITERATURE: {'this name': 1, 'know': 45}
+ -> MUSIC: {'this name': 6, 'know': 67}
+ -> GEOGRAPHY: {'this name': 4, 'know': 42}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: MUSIC
+Question: This first host of The Tonight Show emceed Meeting of Minds for PBS in 1977
+Answer: Steve Allen
+Nouns: ['This first host', 'The Tonight Show', 'Meeting', 'Minds', 'PBS', 'Steve Allen']
+Verbs: []
+Matches: 4
+ -> HISTORY: {'PBS': 1}
+ -> SCIENCE: {}
+ -> LITERATURE: {}
+ -> MUSIC: {'PBS': 1, 'Steve Allen': 1}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: In geometry it's a quadrilateral with 2 parallel sides; in anatomy, it's the smallest wrist bone
+Answer: Trapezoid
+Nouns: ['geometry', 'it', 'a quadrilateral', '2 parallel sides', 'anatomy', 'it', 'the smallest wrist bone', 'Trapezoid']
+Verbs: []
+Matches: 6
+ -> HISTORY: {'it': 188, 'anatomy': 1}
+ -> SCIENCE: {'it': 176, 'anatomy': 1}
+ -> LITERATURE: {'it': 72}
+ -> MUSIC: {'it': 156}
+ -> GEOGRAPHY: {'it': 81}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: There are first-person accounts of this volcano's eruption in 1767 (as there had been in 79 A.D.)
+Answer: Vesuvius
+Nouns: ['first-person accounts', "this volcano's eruption", '79 A.D.', 'Vesuvius']
+Verbs: ['be']
+Matches: 1
+ -> HISTORY: {'be': 135}
+ -> SCIENCE: {'be': 76}
+ -> LITERATURE: {'be': 142}
+ -> MUSIC: {'be': 204}
+ -> GEOGRAPHY: {'be': 42}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: Treat Williams, Gary Sandy & Jim Belushi have all played the pirate king in this operetta
+Answer: The Pirates of Penzance
+Nouns: ['Treat Williams', 'Gary Sandy', 'Jim Belushi', 'the pirate king', 'this operetta', 'The Pirates', 'Penzance']
+Verbs: ['play']
+Matches: 1
+ -> HISTORY: {'play': 17}
+ -> SCIENCE: {'play': 3}
+ -> LITERATURE: {'play': 21}
+ -> MUSIC: {'play': 111}
+ -> GEOGRAPHY: {'play': 5}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: The Hubble Space Telescope was deployed by this space shuttle; 3 years later the Endeavour fixed its mirror
+Answer: Discovery
+Nouns: ['The Hubble Space Telescope', 'this space shuttle', 'the Endeavour', 'its mirror', 'Discovery']
+Verbs: ['deploy', 'fix']
+Matches: 5
+ -> HISTORY: {'this space shuttle': 1, 'Discovery': 1, 'fix': 2}
+ -> SCIENCE: {}
+ -> LITERATURE: {'fix': 1}
+ -> MUSIC: {'fix': 1}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: This word can mean unable to produce offspring or free from living microorganisms
+Answer: sterile (sterility accepted)
+Nouns: ['This word', 'offspring', 'living microorganisms', 'sterility']
+Verbs: ['mean', 'produce', 'accept']
+Matches: 5
+ -> HISTORY: {'This word': 1, 'mean': 17, 'produce': 5, 'accept': 9}
+ -> SCIENCE: {'offspring': 1, 'mean': 19, 'produce': 37, 'accept': 4}
+ -> LITERATURE: {'mean': 7, 'produce': 3, 'accept': 1}
+ -> MUSIC: {'mean': 24, 'produce': 8, 'accept': 2}
+ -> GEOGRAPHY: {'This word': 1, 'mean': 20, 'produce': 4}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: The Once and Future King
+Answer: Camelot
+Nouns: ['The Once and Future King', 'Camelot']
+Verbs: []
+Matches: 2
+ -> HISTORY: {'Camelot': 1}
+ -> SCIENCE: {}
+ -> LITERATURE: {}
+ -> MUSIC: {'Camelot': 6}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: This attraction between atoms may be ionic, covalent or hydrogen
+Answer: the bond
+Nouns: ['This attraction', 'atoms', 'the bond']
+Verbs: ['be']
+Matches: 3
+ -> HISTORY: {'atoms': 1, 'be': 135}
+ -> SCIENCE: {'atoms': 5, 'be': 76}
+ -> LITERATURE: {'be': 142}
+ -> MUSIC: {'be': 204}
+ -> GEOGRAPHY: {'be': 42}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: Being a surfer helped this Hawaiian musician Sleep Through The Static
+Answer: Jack Johnson
+Nouns: ['a surfer', 'this Hawaiian musician Sleep', 'The Static', 'Jack Johnson']
+Verbs: ['be', 'help']
+Matches: 2
+ -> HISTORY: {'be': 135, 'help': 21}
+ -> SCIENCE: {'be': 76, 'help': 14}
+ -> LITERATURE: {'be': 142, 'help': 15}
+ -> MUSIC: {'be': 204, 'help': 16}
+ -> GEOGRAPHY: {'be': 42}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: MUSIC
+Question: Because the yoke originally was cut off, the name of this dress is Hawaiian for cut-off
+Answer: a mu'umu'u
+Nouns: ['the yoke', 'the name', 'this dress', 'Hawaiian', 'cut', "a mu'umu'u"]
+Verbs: ['cut']
+Matches: 5
+ -> HISTORY: {'the name': 8, 'cut': 5}
+ -> SCIENCE: {'the name': 5, 'cut': 2}
+ -> LITERATURE: {'the name': 11, 'cut': 2}
+ -> MUSIC: {'the name': 7, 'Hawaiian': 1, 'cut': 1}
+ -> GEOGRAPHY: {'the name': 4, 'cut': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: December 8, 1980 in New York City
+Answer: John Lennon
+Nouns: ['December', 'New York City', 'John Lennon']
+Verbs: []
+Matches: 6
+ -> HISTORY: {'December': 18, 'New York City': 8, 'John Lennon': 1}
+ -> SCIENCE: {'December': 1}
+ -> LITERATURE: {'New York City': 1}
+ -> MUSIC: {'December': 3, 'New York City': 3, 'John Lennon': 2}
+ -> GEOGRAPHY: {'New York City': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: This group had 26 No. 1 country hits in the '80s, including Feels So Right
+Answer: Alabama
+Nouns: ['This group', '26 No. 1 country', "the '", '80s', 'Alabama']
+Verbs: ['have', 'hit', 'include', 'feel']
+Matches: 12
+ -> HISTORY: {'This group': 2, "the '": 5, '80s': 1, 'Alabama': 4, 'have': 95, 'hit': 7, 'include': 20, 'feel': 3}
+ -> SCIENCE: {"the '": 1, 'Alabama': 1, 'have': 99, 'hit': 1, 'include': 34, 'feel': 4}
+ -> LITERATURE: {"the '": 4, 'Alabama': 1, 'have': 58, 'hit': 3, 'include': 56, 'feel': 1}
+ -> MUSIC: {'This group': 9, "the '": 19, '80s': 6, 'Alabama': 3, 'have': 120, 'hit': 111, 'include': 60, 'feel': 18}
+ -> GEOGRAPHY: {"the '": 4, '80s': 1, 'Alabama': 4, 'have': 46, 'include': 36, 'feel': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: LITERATURE
+Question: He traveled the world & beyond with his novels Poland, Caribbean & Space
+Answer: (James) Michener
+Nouns: ['He', 'the world', 'his novels', 'Poland', 'Caribbean', 'Space', '(James) Michener']
+Verbs: ['travel']
+Matches: 9
+ -> HISTORY: {'He': 54, 'the world': 12, 'Poland': 11, 'travel': 4}
+ -> SCIENCE: {'He': 16, 'the world': 5, 'travel': 9}
+ -> LITERATURE: {'He': 133, 'the world': 9, 'his novels': 5, 'Poland': 3, 'travel': 5}
+ -> MUSIC: {'He': 56, 'the world': 6, 'Space': 1, 'travel': 2}
+ -> GEOGRAPHY: {'the world': 12, 'Poland': 3}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: GEOGRAPHY
+Question: In 1889 this island joined up with Tobago as a single colony
+Answer: Trinidad
+Nouns: ['this island', 'Tobago', 'a single colony', 'Trinidad']
+Verbs: ['join']
+Matches: 7
+ -> HISTORY: {'this island': 20, 'join': 16}
+ -> SCIENCE: {'this island': 1, 'join': 2}
+ -> LITERATURE: {'this island': 2, 'join': 4}
+ -> MUSIC: {'join': 2}
+ -> GEOGRAPHY: {'this island': 12, 'Tobago': 2, 'Trinidad': 2, 'join': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: Charlotte Amalie, the capital of the U.S. Virgin Islands, is located on this island
+Answer: St. Thomas
+Nouns: ['Charlotte Amalie', 'the capital', 'the U.S. Virgin Islands', 'this island', 'St. Thomas']
+Verbs: ['locate']
+Matches: 8
+ -> HISTORY: {'the capital': 8, 'the U.S. Virgin Islands': 1, 'this island': 20, 'St. Thomas': 1}
+ -> SCIENCE: {'this island': 1, 'locate': 2}
+ -> LITERATURE: {'the capital': 1, 'this island': 2, 'locate': 2}
+ -> MUSIC: {'the capital': 1}
+ -> GEOGRAPHY: {'the capital': 21, 'this island': 12, 'locate': 29}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: LITERATURE
+Question: Vincent Price rap-narrates the now classic video to this Michael Jackson song
+Answer: Thriller
+Nouns: ['the now classic video', 'this Michael Jackson song', 'Thriller']
+Verbs: ['narrate']
+Matches: 1
+ -> HISTORY: {}
+ -> SCIENCE: {}
+ -> LITERATURE: {'narrate': 7}
+ -> MUSIC: {}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: This author who set The Return of the Native in Wessex had a terrier named Wessex
+Answer: (Thomas) Hardy
+Nouns: ['This author', 'who', 'The Return', 'the Native', 'Wessex', 'Wessex', '(Thomas']
+Verbs: ['set', 'have', 'name']
+Matches: 11
+ -> HISTORY: {'This author': 2, 'who': 91, 'Wessex': 1, 'set': 17, 'have': 95, 'name': 73}
+ -> SCIENCE: {'who': 30, 'set': 4, 'have': 99, 'name': 58}
+ -> LITERATURE: {'This author': 47, 'who': 102, 'The Return': 1, '(Thomas': 2, 'set': 36, 'have': 58, 'name': 34}
+ -> MUSIC: {'who': 67, 'set': 17, 'have': 120, 'name': 38}
+ -> GEOGRAPHY: {'who': 15, 'set': 3, 'have': 46, 'name': 60}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: Just using flour & water gives you unleavened bread; add this fungus to leaven it
+Answer: yeast
+Nouns: ['flour', 'water', 'you', 'unleavened bread', 'this fungus', 'it', 'yeast']
+Verbs: ['use', 'give', 'add', 'leaven']
+Matches: 9
+ -> HISTORY: {'water': 2, 'you': 16, 'it': 188, 'use': 45, 'give': 48, 'add': 7}
+ -> SCIENCE: {'water': 23, 'you': 52, 'it': 176, 'use': 83, 'give': 29, 'add': 11}
+ -> LITERATURE: {'water': 1, 'you': 27, 'it': 72, 'use': 30, 'give': 36, 'add': 2}
+ -> MUSIC: {'water': 1, 'you': 83, 'it': 156, 'use': 44, 'give': 35, 'add': 1}
+ -> GEOGRAPHY: {'water': 9, 'you': 24, 'it': 81, 'use': 4, 'give': 6}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: Henry Miller's The Colossus of Maroussi is an account of his travels in this country
+Answer: Greece
+Nouns: ["Henry Miller's The Colossus", 'Maroussi', 'an account', 'his travels', 'this country', 'Greece']
+Verbs: []
+Matches: 6
+ -> HISTORY: {'his travels': 1, 'this country': 128, 'Greece': 9}
+ -> SCIENCE: {'this country': 2, 'Greece': 1}
+ -> LITERATURE: {'an account': 1, 'this country': 14, 'Greece': 1}
+ -> MUSIC: {'this country': 10, 'Greece': 3}
+ -> GEOGRAPHY: {'this country': 60, 'Greece': 6}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: LITERATURE
+Question: Devoted fans of the hit musical about this dual personality are known as Jeckies
+Answer: Dr. Jekyll & Mr. Hyde
+Nouns: ['Devoted fans', 'the hit', 'this dual personality', 'Jeckies', 'Dr. Jekyll', 'Mr. Hyde']
+Verbs: ['know']
+Matches: 5
+ -> HISTORY: {'know': 75}
+ -> SCIENCE: {'know': 42}
+ -> LITERATURE: {'Dr. Jekyll': 2, 'Mr. Hyde': 2, 'know': 45}
+ -> MUSIC: {'Dr. Jekyll': 1, 'Mr. Hyde': 1, 'know': 67}
+ -> GEOGRAPHY: {'know': 42}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: MUSIC
+Question: 1995's Carrington also portrays the life & loves of this Bloomsbury Group member who wrote Eminent Victorians
+Answer: Lytton Strachey
+Nouns: ["1995's Carrington", 'the life', 'loves', 'this Bloomsbury Group member', 'who', 'Eminent Victorians', 'Lytton Strachey']
+Verbs: ['portray', 'write']
+Matches: 8
+ -> HISTORY: {'the life': 3, 'who': 91, 'portray': 2, 'write': 34}
+ -> SCIENCE: {'who': 30, 'write': 14}
+ -> LITERATURE: {'the life': 4, 'who': 102, 'portray': 3, 'write': 344}
+ -> MUSIC: {'the life': 3, 'loves': 1, 'who': 67, 'portray': 2, 'write': 111}
+ -> GEOGRAPHY: {'who': 15, 'write': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: ...& the Blackhearts
+Answer: Joan Jett
+Nouns: ['the Blackhearts', 'Joan Jett']
+Verbs: []
+Matches: 0
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: It completes the Robert Browning line God's in His heaven...
+Answer: ...all's right with the world
+Nouns: ['It', 'the Robert Browning line', 'God', 'His heaven', 'the world']
+Verbs: ['complete', 'be']
+Matches: 8
+ -> HISTORY: {'It': 57, 'God': 6, 'the world': 12, 'complete': 8, 'be': 135}
+ -> SCIENCE: {'It': 68, 'the world': 5, 'complete': 1, 'be': 76}
+ -> LITERATURE: {'It': 43, 'God': 8, 'the world': 9, 'complete': 6, 'be': 142}
+ -> MUSIC: {'It': 98, 'God': 8, 'the world': 6, 'complete': 10, 'be': 204}
+ -> GEOGRAPHY: {'It': 46, 'the world': 12, 'complete': 1, 'be': 42}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: This string instrument got its name from its old job of playing along with other instruments low notes
+Answer: a double bass
+Nouns: ['This string instrument', 'its name', 'its old job', 'other instruments', 'a double bass']
+Verbs: ['get', 'play']
+Matches: 4
+ -> HISTORY: {'its name': 16, 'get': 39, 'play': 17}
+ -> SCIENCE: {'its name': 5, 'get': 22, 'play': 3}
+ -> LITERATURE: {'its name': 2, 'get': 20, 'play': 21}
+ -> MUSIC: {'its name': 21, 'get': 45, 'play': 111}
+ -> GEOGRAPHY: {'its name': 10, 'get': 3, 'play': 5}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: MUSIC
+Question: The petals of the English daisy do this at night; the flowers of the scarlet pimpernel, when bad weather approaches
+Answer: fold up (or close)
+Nouns: ['The petals', 'the English daisy', 'night', 'the scarlet pimpernel', 'bad weather']
+Verbs: ['do', 'approach', 'fold']
+Matches: 3
+ -> HISTORY: {'do': 21, 'approach': 1}
+ -> SCIENCE: {'do': 28}
+ -> LITERATURE: {'do': 20}
+ -> MUSIC: {'night': 1, 'do': 42}
+ -> GEOGRAPHY: {'do': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: About 1 hydrogen atom in 6,500 is this isotope
+Answer: deuterium
+Nouns: ['About 1 hydrogen atom', 'this isotope', 'deuterium']
+Verbs: []
+Matches: 0
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: Reverend Moore,  Ariel,  Ren
+Answer: Footloose
+Nouns: ['Reverend Moore', ' Ariel', 'Footloose']
+Verbs: ['Ren']
+Matches: 0
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: In 1893 Francisco Fanciulli succeeded this man as leader of the U.S. Marine Band
+Answer: John Philip Sousa
+Nouns: ['Francisco Fanciulli', 'this man', 'leader', 'the U.S. Marine Band', 'John Philip Sousa']
+Verbs: ['succeed']
+Matches: 5
+ -> HISTORY: {'this man': 38, 'leader': 5, 'succeed': 11}
+ -> SCIENCE: {'this man': 8, 'succeed': 1}
+ -> LITERATURE: {'this man': 14}
+ -> MUSIC: {'this man': 13, 'John Philip Sousa': 4, 'succeed': 5}
+ -> GEOGRAPHY: {'this man': 1, 'succeed': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: SCIENCE
+Question: From the early 1900s, his The First Men in the Moon & The War in the Air proved eerily prophetic
+Answer: H.G. Wells
+Nouns: ['his The First Men', 'the Moon', 'The War', 'the Air', 'H.G. Wells']
+Verbs: ['prove']
+Matches: 7
+ -> HISTORY: {'The War': 3, 'prove': 6}
+ -> SCIENCE: {'the Moon': 2, 'The War': 1, 'H.G. Wells': 1, 'prove': 3}
+ -> LITERATURE: {'the Moon': 2, 'H.G. Wells': 5}
+ -> MUSIC: {'the Moon': 1}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: MUSIC
+Question: In the 1960s, many Barbie doll fashions, & even Barbie's bouffant hairdo, were inspired by this First Lady
+Answer: Jacqueline Kennedy (Onassis)
+Nouns: ['the 1960s', 'many Barbie doll fashions', "even Barbie's bouffant hairdo", 'this First Lady', 'Jacqueline Kennedy', '(Onassis']
+Verbs: ['inspire']
+Matches: 5
+ -> HISTORY: {'the 1960s': 1, 'inspire': 7}
+ -> SCIENCE: {'inspire': 2}
+ -> LITERATURE: {'inspire': 23}
+ -> MUSIC: {'the 1960s': 3, 'Jacqueline Kennedy': 1, 'inspire': 14}
+ -> GEOGRAPHY: {'inspire': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: Alexander the Great led his troops as far east as the Hyphasis, now the Beas, river in this country
+Answer: India
+Nouns: ['Alexander', 'the Great', 'his troops', 'the Hyphasis', 'the Beas', 'river', 'this country', 'India']
+Verbs: ['lead']
+Matches: 11
+ -> HISTORY: {'Alexander': 12, 'the Great': 12, 'his troops': 1, 'this country': 128, 'India': 15, 'lead': 64}
+ -> SCIENCE: {'this country': 2, 'India': 2, 'lead': 8}
+ -> LITERATURE: {'the Great': 1, 'this country': 14, 'India': 9, 'lead': 6}
+ -> MUSIC: {'this country': 10, 'India': 3, 'lead': 17}
+ -> GEOGRAPHY: {'Alexander': 1, 'this country': 60, 'India': 13, 'lead': 4}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: A religious kaside poem praised God, this man or his son-in-law, Ali Ibn Abi Talib, the fourth caliph
+Answer: Muhammad
+Nouns: ['A religious kaside poem', 'God', 'this man', 'his son', 'law', 'Muhammad']
+Verbs: ['praise']
+Matches: 8
+ -> HISTORY: {'God': 6, 'this man': 38, 'his son': 7, 'law': 4}
+ -> SCIENCE: {'this man': 8, 'praise': 1}
+ -> LITERATURE: {'God': 8, 'this man': 14, 'his son': 7, 'law': 4}
+ -> MUSIC: {'God': 8, 'this man': 13, 'his son': 1, 'law': 1}
+ -> GEOGRAPHY: {'this man': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: Dorothy's felt-tipped pens
+Answer: Parker's markers
+Nouns: ["Dorothy's felt-tipped pens", "Parker's markers"]
+Verbs: ['feel']
+Matches: 1
+ -> HISTORY: {'feel': 3}
+ -> SCIENCE: {'feel': 4}
+ -> LITERATURE: {'feel': 1}
+ -> MUSIC: {'feel': 18}
+ -> GEOGRAPHY: {'feel': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: GEOGRAPHY
+Question: Ernest Bloch's orchestral work Helvetia, The Land Of Mountains Amd Its People honors this country, his birthplace
+Answer: Switzerland
+Nouns: ["Ernest Bloch's orchestral work Helvetia", 'The Land', 'Mountains', 'Amd Its People', 'this country', 'Switzerland']
+Verbs: ['honor']
+Matches: 7
+ -> HISTORY: {'this country': 128, 'Switzerland': 3, 'honor': 3}
+ -> SCIENCE: {'this country': 2, 'Switzerland': 1}
+ -> LITERATURE: {'this country': 14, 'Switzerland': 2, 'honor': 2}
+ -> MUSIC: {'this country': 10, 'Switzerland': 1, 'honor': 1}
+ -> GEOGRAPHY: {'The Land': 1, 'this country': 60, 'Switzerland': 5, 'honor': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: SCIENCE
+Question: This monk might have said, Give peas a chance; he used pea plants to discover the laws of heredity
+Answer: Gregor Mendel
+Nouns: ['This monk', 'peas', 'a chance', 'he', 'pea plants', 'the laws', 'heredity', 'Gregor Mendel']
+Verbs: ['say', 'give', 'use', 'discover']
+Matches: 12
+ -> HISTORY: {'This monk': 1, 'he': 260, 'the laws': 1, 'say': 58, 'give': 48, 'use': 45, 'discover': 5}
+ -> SCIENCE: {'peas': 1, 'he': 57, 'heredity': 4, 'Gregor Mendel': 1, 'say': 25, 'give': 29, 'use': 83, 'discover': 34}
+ -> LITERATURE: {'he': 242, 'say': 79, 'give': 36, 'use': 30, 'discover': 4}
+ -> MUSIC: {'he': 144, 'say': 44, 'give': 35, 'use': 44, 'discover': 4}
+ -> GEOGRAPHY: {'he': 3, 'say': 5, 'give': 6, 'use': 4, 'discover': 3}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: Edwin Arlington Robinson character who one calm summer night, went home and put a bullet through his head
+Answer: Richard Cory
+Nouns: ['Edwin Arlington Robinson character', 'who', 'a bullet', 'his head', 'Richard Cory']
+Verbs: ['go', 'put']
+Matches: 8
+ -> HISTORY: {'who': 91, 'a bullet': 1, 'his head': 3, 'go': 39, 'put': 18}
+ -> SCIENCE: {'who': 30, 'go': 19, 'put': 8}
+ -> LITERATURE: {'who': 102, 'a bullet': 1, 'his head': 1, 'go': 41, 'put': 8}
+ -> MUSIC: {'who': 67, 'go': 53, 'put': 9}
+ -> GEOGRAPHY: {'who': 15, 'go': 7}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: LITERATURE
+Question: Famous 1863 speech by President Lincoln that began, Four score and seven years ago...
+Answer: the Gettysburg Address
+Nouns: ['Famous 1863 speech', 'President Lincoln', 'Four score', 'the Gettysburg Address']
+Verbs: ['begin']
+Matches: 3
+ -> HISTORY: {'begin': 71}
+ -> SCIENCE: {'begin': 10}
+ -> LITERATURE: {'President Lincoln': 1, 'begin': 58}
+ -> MUSIC: {'begin': 29}
+ -> GEOGRAPHY: {'begin': 9}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: Inside the heart there are 4 of these; 2 semilunar, a bicuspid & a tricuspid
+Answer: valves
+Nouns: ['the heart', 'a bicuspid', 'a tricuspid', 'valves']
+Verbs: []
+Matches: 2
+ -> HISTORY: {'the heart': 2}
+ -> SCIENCE: {'the heart': 3}
+ -> LITERATURE: {}
+ -> MUSIC: {'valves': 2}
+ -> GEOGRAPHY: {'the heart': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: According to the title of an Allan Gurganus novel, Lucy Marsden, the Oldest Living one of these, Tells All
+Answer: Confederate widow
+Nouns: ['the title', 'an Allan Gurganus novel', 'Confederate widow']
+Verbs: ['accord', 'tell', 'confederate']
+Matches: 5
+ -> HISTORY: {'the title': 6, 'accord': 7, 'tell': 15, 'confederate': 1}
+ -> SCIENCE: {'accord': 4, 'tell': 11}
+ -> LITERATURE: {'the title': 28, 'accord': 3, 'tell': 51}
+ -> MUSIC: {'the title': 22, 'accord': 6, 'tell': 18}
+ -> GEOGRAPHY: {'the title': 1, 'tell': 2}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: This type of headlight that uses a trace of bromine or iodine vapor is the standard in auto manufacture
+Answer: halogen
+Nouns: ['This type', 'headlight', 'a trace', 'bromine', 'iodine vapor', 'the standard', 'auto manufacture', 'halogen']
+Verbs: ['use']
+Matches: 3
+ -> HISTORY: {'This type': 1, 'use': 45}
+ -> SCIENCE: {'This type': 6, 'use': 83}
+ -> LITERATURE: {'use': 30}
+ -> MUSIC: {'This type': 4, 'use': 44}
+ -> GEOGRAPHY: {'use': 4}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: Denmark's highest point, Yding Skovhoj, rises only 568 feet on this peninsula
+Answer: Jutland
+Nouns: ["Denmark's highest point", 'Yding Skovhoj', 'only 568 feet', 'this peninsula', 'Jutland']
+Verbs: ['yde', 'rise']
+Matches: 5
+ -> HISTORY: {'this peninsula': 3, 'Jutland': 1, 'rise': 3}
+ -> SCIENCE: {'rise': 2}
+ -> LITERATURE: {'rise': 5}
+ -> MUSIC: {'rise': 4}
+ -> GEOGRAPHY: {'this peninsula': 8, 'Jutland': 2, 'rise': 14}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE', 'GEOGRAPHY']           ->            Obtained: HISTORY
+Question: Leo Tolstoy's story about Hadji Murat, who slew the Russian swine, opens in this present-day Russian republic
+Answer: Chechnya
+Nouns: ["Leo Tolstoy's story", 'Hadji Murat', 'who', 'the Russian swine', 'this present-day Russian republic', 'Chechnya']
+Verbs: ['slay', 'open']
+Matches: 6
+ -> HISTORY: {'who': 91, 'Chechnya': 1, 'slay': 1, 'open': 20}
+ -> SCIENCE: {'who': 30, 'open': 3}
+ -> LITERATURE: {'who': 102, 'slay': 1, 'open': 9}
+ -> MUSIC: {'who': 67, 'open': 15}
+ -> GEOGRAPHY: {'who': 15, 'open': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: Venice, Italy is the mistress of this arm of the Mediterranean
+Answer: the Adriatic
+Nouns: ['Venice', 'Italy', 'the mistress', 'this arm', 'the Mediterranean']
+Verbs: []
+Matches: 6
+ -> HISTORY: {'Venice': 6, 'Italy': 15, 'the Mediterranean': 2}
+ -> SCIENCE: {'Venice': 1, 'Italy': 3, 'the Mediterranean': 2}
+ -> LITERATURE: {'Venice': 4, 'Italy': 4}
+ -> MUSIC: {'Venice': 3, 'Italy': 1}
+ -> GEOGRAPHY: {'Italy': 8, 'this arm': 2, 'the Mediterranean': 8}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: SCIENCE
+Question: Musical instruments such as marimbas & maracas are classified as this type
+Answer: Percussion
+Nouns: ['Musical instruments', 'marimbas', 'maracas', 'this type', 'Percussion']
+Verbs: ['classify']
+Matches: 5
+ -> HISTORY: {'this type': 5}
+ -> SCIENCE: {'Musical instruments': 1, 'this type': 43, 'classify': 7}
+ -> LITERATURE: {'this type': 6}
+ -> MUSIC: {'this type': 12, 'classify': 1}
+ -> GEOGRAPHY: {'this type': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: The flask that this British scientist invented in the 1890s was a predecessor of the Thermos
+Answer: James Dewar
+Nouns: ['The flask', 'this British scientist', 'the 1890s', 'a predecessor', 'the Thermos', 'James Dewar']
+Verbs: ['invent']
+Matches: 3
+ -> HISTORY: {'the 1890s': 5, 'invent': 9}
+ -> SCIENCE: {'the 1890s': 1, 'invent': 12}
+ -> LITERATURE: {'the 1890s': 1, 'invent': 3}
+ -> MUSIC: {'the 1890s': 1, 'invent': 5}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: In 1897 this son of slaves discovered 3 new species of fungi which are named for him, including taphrina carveri
+Answer: George Washington Carver
+Nouns: ['this son', 'slaves', '3 new species', 'fungi', 'him', 'taphrina carveri', 'George Washington Carver']
+Verbs: ['discover', 'name', 'include']
+Matches: 9
+ -> HISTORY: {'this son': 3, 'slaves': 3, 'him': 51, 'discover': 5, 'name': 73, 'include': 20}
+ -> SCIENCE: {'fungi': 1, 'him': 11, 'George Washington Carver': 1, 'discover': 34, 'name': 58, 'include': 34}
+ -> LITERATURE: {'this son': 1, 'him': 54, 'discover': 4, 'name': 34, 'include': 56}
+ -> MUSIC: {'this son': 1, 'slaves': 1, 'him': 29, 'discover': 4, 'name': 38, 'include': 60}
+ -> GEOGRAPHY: {'him': 2, 'discover': 3, 'name': 60, 'include': 36}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: 8th most populous country in the world, this Bengal Nation was once East Pakistan
+Answer: Bangladesh
+Nouns: ['8th most populous country', 'the world', 'this Bengal Nation', 'East Pakistan', 'Bangladesh']
+Verbs: []
+Matches: 4
+ -> HISTORY: {'the world': 12, 'Bangladesh': 1}
+ -> SCIENCE: {'the world': 5}
+ -> LITERATURE: {'the world': 9, 'Bangladesh': 1}
+ -> MUSIC: {'the world': 6}
+ -> GEOGRAPHY: {'the world': 12, 'Bangladesh': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: Scene by the brook is the title of one movement of this Beethoven symphony in F major
+Answer: the 6th symphony
+Nouns: ['Scene', 'the brook', 'the title', 'one movement', 'this Beethoven symphony', 'F major', 'the 6th symphony']
+Verbs: []
+Matches: 2
+ -> HISTORY: {'the title': 6}
+ -> SCIENCE: {}
+ -> LITERATURE: {'the title': 28}
+ -> MUSIC: {'the title': 22}
+ -> GEOGRAPHY: {'the title': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: In the 1780s William Herschel determined its axial inclination & found it had ice caps
+Answer: Mars
+Nouns: ['the 1780s', 'William Herschel', 'its axial inclination', 'it', 'ice caps', 'Mars']
+Verbs: ['determine', 'find', 'have']
+Matches: 9
+ -> HISTORY: {'the 1780s': 1, 'it': 188, 'Mars': 1, 'determine': 2, 'find': 28, 'have': 95}
+ -> SCIENCE: {'the 1780s': 1, 'it': 176, 'Mars': 10, 'determine': 9, 'find': 46, 'have': 99}
+ -> LITERATURE: {'it': 72, 'find': 18, 'have': 58}
+ -> MUSIC: {'it': 156, 'Mars': 2, 'determine': 1, 'find': 20, 'have': 120}
+ -> GEOGRAPHY: {'it': 81, 'find': 26, 'have': 46}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: In 1833 a French historian said that this author had built a cathedral as solid as the foundations of the other (one)
+Answer: Victor Hugo
+Nouns: ['a French historian', 'this author', 'a cathedral', 'the foundations', 'Victor Hugo']
+Verbs: ['say', 'build']
+Matches: 6
+ -> HISTORY: {'this author': 2, 'Victor Hugo': 1, 'say': 58, 'build': 39}
+ -> SCIENCE: {'say': 25, 'build': 8}
+ -> LITERATURE: {'this author': 72, 'Victor Hugo': 8, 'say': 79, 'build': 1}
+ -> MUSIC: {'this author': 2, 'say': 44, 'build': 3}
+ -> GEOGRAPHY: {'this author': 1, 'say': 5, 'build': 5}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: Peter Tchaikovsky wrote 3 ballets: Swan Lake, Sleeping Beauty & this perennial Christmas favorite
+Answer: The Nutcracker
+Nouns: ['Peter Tchaikovsky', '3 ballets', 'Swan Lake', 'Sleeping Beauty', 'this perennial Christmas favorite', 'The Nutcracker']
+Verbs: ['write']
+Matches: 1
+ -> HISTORY: {'write': 34}
+ -> SCIENCE: {'write': 14}
+ -> LITERATURE: {'write': 344}
+ -> MUSIC: {'write': 111}
+ -> GEOGRAPHY: {'write': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: MUSIC
+Question: This Polish-French composer who was born in 1810 composed a polonaise when he was only 7
+Answer: (Fredric) Chopin
+Nouns: ['This Polish-French composer', 'who', 'a polonaise', 'he', '(Fredric', 'Chopin']
+Verbs: ['bear', 'compose', 'be']
+Matches: 11
+ -> HISTORY: {'who': 91, 'he': 260, 'bear': 30, 'compose': 1, 'be': 135}
+ -> SCIENCE: {'who': 30, 'he': 57, 'bear': 15, 'compose': 6, 'be': 76}
+ -> LITERATURE: {'who': 102, 'he': 242, 'bear': 44, 'compose': 1, 'be': 142}
+ -> MUSIC: {'who': 67, 'a polonaise': 1, 'he': 144, 'Chopin': 4, 'bear': 30, 'compose': 30, 'be': 204}
+ -> GEOGRAPHY: {'who': 15, 'he': 3, 'bear': 6, 'compose': 1, 'be': 42}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: Named for a steamboat captain, this Mother Church of Country Music was home to the Opry for 31 years
+Answer: Ryman Auditorium
+Nouns: ['a steamboat captain', 'this Mother Church', 'Country Music', 'home', 'the Opry', '31 years', 'Ryman Auditorium']
+Verbs: ['name']
+Matches: 3
+ -> HISTORY: {'home': 4, 'name': 73}
+ -> SCIENCE: {'home': 1, 'name': 58}
+ -> LITERATURE: {'home': 4, 'name': 34}
+ -> MUSIC: {'31 years': 1, 'name': 38}
+ -> GEOGRAPHY: {'home': 6, 'name': 60}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: This Washington volcano erupted on November 22, 1842; it blew its top again in 1980
+Answer: Mount St. Helens
+Nouns: ['This Washington volcano', 'November', 'it', 'its top', 'Mount St. Helens']
+Verbs: ['erupt', 'blow']
+Matches: 6
+ -> HISTORY: {'November': 16, 'it': 188, 'erupt': 3, 'blow': 1}
+ -> SCIENCE: {'November': 1, 'it': 176, 'blow': 1}
+ -> LITERATURE: {'it': 72, 'blow': 1}
+ -> MUSIC: {'November': 1, 'it': 156, 'blow': 7}
+ -> GEOGRAPHY: {'it': 81}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: In his 1st book, The Boo, Pat Conroy wrote about this South Carolina military academy, his alma mater
+Answer: The Citadel
+Nouns: ['his 1st book', 'The Boo', 'Pat Conroy', 'this South Carolina military academy', 'his alma mater', 'The Citadel']
+Verbs: ['write']
+Matches: 1
+ -> HISTORY: {'write': 34}
+ -> SCIENCE: {'write': 14}
+ -> LITERATURE: {'write': 344}
+ -> MUSIC: {'write': 111}
+ -> GEOGRAPHY: {'write': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: The Paraguay River divides Paraguay into 2 major regions:  Occidental Paraguay & this
+Answer: Oriental Paraguay
+Nouns: ['The Paraguay River', 'Paraguay', '2 major regions', ' Occidental Paraguay', 'Oriental Paraguay']
+Verbs: ['divide']
+Matches: 3
+ -> HISTORY: {'Paraguay': 2, 'divide': 8}
+ -> SCIENCE: {'divide': 9}
+ -> LITERATURE: {'divide': 4}
+ -> MUSIC: {'divide': 2}
+ -> GEOGRAPHY: {'Paraguay': 1, 'divide': 11}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: Once the capital of New Netherland, New York City was originally named this
+Answer: New Amsterdam
+Nouns: ['the capital', 'New Netherland', 'New York City', 'New Amsterdam']
+Verbs: ['name']
+Matches: 9
+ -> HISTORY: {'the capital': 8, 'New Netherland': 2, 'New York City': 8, 'New Amsterdam': 2, 'name': 73}
+ -> SCIENCE: {'name': 58}
+ -> LITERATURE: {'the capital': 1, 'New York City': 1, 'name': 34}
+ -> MUSIC: {'the capital': 1, 'New York City': 3, 'name': 38}
+ -> GEOGRAPHY: {'the capital': 21, 'New Netherland': 1, 'New York City': 1, 'New Amsterdam': 3, 'name': 60}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: Shaw's scorched saint
+Answer: St. Joan of Arc
+Nouns: ["Shaw's scorched saint", 'St. Joan', 'Arc']
+Verbs: ['scorch']
+Matches: 2
+ -> HISTORY: {'Arc': 8}
+ -> SCIENCE: {'scorch': 1}
+ -> LITERATURE: {'Arc': 2}
+ -> MUSIC: {'Arc': 1}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: GEOGRAPHY
+Question: In 1927 the 2nd Treaty of Tirana established a 20-year defensive alliance between Italy & this country
+Answer: Albania
+Nouns: ['the 2nd Treaty', 'Tirana', 'a 20-year defensive alliance', 'Italy', 'this country', 'Albania']
+Verbs: ['establish']
+Matches: 7
+ -> HISTORY: {'Italy': 15, 'this country': 128, 'establish': 35}
+ -> SCIENCE: {'Italy': 3, 'this country': 2, 'establish': 1}
+ -> LITERATURE: {'Italy': 4, 'this country': 14, 'establish': 1}
+ -> MUSIC: {'Italy': 1, 'this country': 10, 'establish': 2}
+ -> GEOGRAPHY: {'Italy': 8, 'this country': 60, 'Albania': 1, 'establish': 5}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: LITERATURE
+Question: In a large painting called Models, this pointillist included a glimpse of his masterpiece La Grande Jatte
+Answer: Seurat
+Nouns: ['a large painting', 'Models', 'this pointillist', 'a glimpse', 'his masterpiece', 'La Grande Jatte', 'Seurat']
+Verbs: ['call', 'include']
+Matches: 4
+ -> HISTORY: {'call': 73, 'include': 20}
+ -> SCIENCE: {'call': 74, 'include': 34}
+ -> LITERATURE: {'his masterpiece': 1, 'call': 76, 'include': 56}
+ -> MUSIC: {'Seurat': 1, 'call': 58, 'include': 60}
+ -> GEOGRAPHY: {'call': 39, 'include': 36}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: MUSIC
+Question: Pal, a male collie, played the lead in the 1943 movie version of this Eric Knight novel
+Answer: Lassie Come Home
+Nouns: ['Pal', 'a male collie', 'the lead', 'the 1943 movie version', 'this Eric Knight novel', 'Lassie']
+Verbs: ['play', 'come']
+Matches: 4
+ -> HISTORY: {'play': 17, 'come': 31}
+ -> SCIENCE: {'play': 3, 'come': 38}
+ -> LITERATURE: {'play': 21, 'come': 36}
+ -> MUSIC: {'the lead': 1, 'play': 111, 'come': 35}
+ -> GEOGRAPHY: {'play': 5, 'come': 11}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: MUSIC
+Question: Her bestsellers Chances, Lucky & Lady Boss all revolve around Lucky Santangelo
+Answer: Jackie Collins
+Nouns: ['Her bestsellers', 'Chances', 'Lucky', 'Lady Boss', 'Lucky Santangelo', 'Jackie Collins']
+Verbs: ['revolve']
+Matches: 3
+ -> HISTORY: {}
+ -> SCIENCE: {'revolve': 2}
+ -> LITERATURE: {'Jackie Collins': 2}
+ -> MUSIC: {'Lucky': 1, 'revolve': 1}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: Physicist John Wheeler compared possible passages through space & time to the work of this creature
+Answer: a worm
+Nouns: ['Physicist John Wheeler', 'possible passages', 'space', 'time', 'the work', 'this creature', 'a worm']
+Verbs: ['compare']
+Matches: 7
+ -> HISTORY: {'space': 2, 'time': 5, 'the work': 3, 'compare': 1}
+ -> SCIENCE: {'space': 2, 'time': 6, 'the work': 2, 'compare': 1}
+ -> LITERATURE: {'time': 3, 'the work': 2, 'this creature': 1, 'compare': 2}
+ -> MUSIC: {'time': 4, 'the work': 1}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: Nuremberg & Augsburg are cities in this southern German state
+Answer: Bavaria
+Nouns: ['Nuremberg', 'Augsburg', 'cities', 'this southern German state', 'Bavaria']
+Verbs: []
+Matches: 6
+ -> HISTORY: {'Augsburg': 1, 'cities': 1, 'Bavaria': 1}
+ -> SCIENCE: {}
+ -> LITERATURE: {}
+ -> MUSIC: {'Bavaria': 1}
+ -> GEOGRAPHY: {'cities': 2, 'Bavaria': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: Tracking these, coast guard rates them as bergy bits, growlers, small, medium, & large
+Answer: icebergs
+Nouns: ['coast guard', 'them', 'bergy bits', 'growlers']
+Verbs: ['track', 'rate', 'iceberg']
+Matches: 3
+ -> HISTORY: {'them': 22, 'track': 2}
+ -> SCIENCE: {'them': 17}
+ -> LITERATURE: {'them': 8, 'track': 1}
+ -> MUSIC: {'them': 10, 'rate': 1}
+ -> GEOGRAPHY: {'them': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: From the French for to raise, it's an embankment designed to prohibit the overflow of water
+Answer: a levee
+Nouns: ['the French', 'it', 'an embankment', 'the overflow', 'water', 'a levee']
+Verbs: ['raise', 'design', 'prohibit']
+Matches: 8
+ -> HISTORY: {'the French': 4, 'it': 188, 'water': 2, 'raise': 8, 'design': 9}
+ -> SCIENCE: {'the French': 1, 'it': 176, 'water': 23, 'raise': 3, 'design': 4}
+ -> LITERATURE: {'it': 72, 'water': 1, 'raise': 3, 'design': 1}
+ -> MUSIC: {'it': 156, 'water': 1, 'raise': 3, 'design': 1}
+ -> GEOGRAPHY: {'it': 81, 'water': 9}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: LITERATURE
+Question: The youngest branch of the U.S. military, it was created soon after World War II
+Answer: the Air Force
+Nouns: ['The youngest branch', 'the U.S. military', 'it', 'World War II', 'the Air Force']
+Verbs: ['create']
+Matches: 7
+ -> HISTORY: {'it': 188, 'World War II': 12, 'create': 23}
+ -> SCIENCE: {'it': 176, 'create': 13}
+ -> LITERATURE: {'it': 72, 'World War II': 3, 'the Air Force': 1, 'create': 22}
+ -> MUSIC: {'it': 156, 'World War II': 1, 'create': 7}
+ -> GEOGRAPHY: {'it': 81, 'create': 7}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: African Game Trails
+Answer: Teddy Roosevelt
+Nouns: ['African Game Trails', 'Teddy Roosevelt']
+Verbs: []
+Matches: 2
+ -> HISTORY: {'Teddy Roosevelt': 3}
+ -> SCIENCE: {}
+ -> LITERATURE: {}
+ -> MUSIC: {}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: LITERATURE
+Question: Germany's worst terrorist gang finally disbanded in 1998, though Baader died in 1977 & this co-leader in 1976
+Answer: Ulrike Meinhof
+Nouns: ["Germany's worst terrorist gang", 'Baader', 'this co', '-', 'Ulrike Meinhof']
+Verbs: ['disband', 'die']
+Matches: 5
+ -> HISTORY: {'-': 11, 'disband': 2, 'die': 43}
+ -> SCIENCE: {'-': 5, 'die': 11}
+ -> LITERATURE: {'this co': 1, '-': 6, 'die': 28}
+ -> MUSIC: {'-': 6, 'die': 14}
+ -> GEOGRAPHY: {'die': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: To the nearest 100, the number of different elements we know about
+Answer: 100
+Nouns: ['To the nearest 100, the number', 'different elements', 'we']
+Verbs: ['know']
+Matches: 3
+ -> HISTORY: {'we': 11, 'know': 75}
+ -> SCIENCE: {'we': 9, 'know': 42}
+ -> LITERATURE: {'we': 10, 'know': 45}
+ -> MUSIC: {'we': 16, 'know': 67}
+ -> GEOGRAPHY: {'we': 3, 'know': 42}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: This 1532 work is dedicated to Lorenzo the Magnificent, son of Piero de Medici
+Answer: The Prince
+Nouns: ['This 1532 work', 'Lorenzo', 'the Magnificent', 'son', 'Piero', 'de Medici', 'The Prince']
+Verbs: ['dedicate']
+Matches: 5
+ -> HISTORY: {'son': 2, 'The Prince': 2, 'dedicate': 1}
+ -> SCIENCE: {}
+ -> LITERATURE: {'son': 2, 'The Prince': 7, 'dedicate': 17}
+ -> MUSIC: {'son': 2, 'dedicate': 1}
+ -> GEOGRAPHY: {'dedicate': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: SCIENCE
+Question: The name of this small harpsichord may come from the Latin for rod or for maiden
+Answer: a virginal
+Nouns: ['The name', 'this small harpsichord', 'the Latin', 'rod', 'maiden']
+Verbs: ['come']
+Matches: 5
+ -> HISTORY: {'The name': 3, 'come': 31}
+ -> SCIENCE: {'The name': 15, 'the Latin': 18, 'come': 38}
+ -> LITERATURE: {'come': 36}
+ -> MUSIC: {'The name': 11, 'the Latin': 4, 'come': 35}
+ -> GEOGRAPHY: {'The name': 11, 'come': 11}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: In the 1970s Milan Kundera was stripped of his citizenship by this country's government
+Answer: Czechoslovakia
+Nouns: ['the 1970s', 'Milan Kundera', 'his citizenship', "this country's government", 'Czechoslovakia']
+Verbs: ['strip']
+Matches: 6
+ -> HISTORY: {'the 1970s': 2, "this country's government": 2, 'Czechoslovakia': 2}
+ -> SCIENCE: {'the 1970s': 2}
+ -> LITERATURE: {'the 1970s': 1}
+ -> MUSIC: {'the 1970s': 1, 'strip': 1}
+ -> GEOGRAPHY: {'the 1970s': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: This 1929 Thomas Wolfe novel is subtitled A Story of the Buried Life
+Answer: Look Homeward Angel
+Nouns: ['This 1929 Thomas Wolfe novel', 'A Story', 'the Buried Life']
+Verbs: ['subtitle', 'look']
+Matches: 2
+ -> HISTORY: {'subtitle': 1, 'look': 7}
+ -> SCIENCE: {'look': 5}
+ -> LITERATURE: {'subtitle': 9, 'look': 14}
+ -> MUSIC: {'subtitle': 8, 'look': 10}
+ -> GEOGRAPHY: {'look': 2}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: This ConAgra sweet popcorn treat comes in butter toffee & caramel flavors
+Answer: Fiddle Faddle
+Nouns: ['This ConAgra sweet popcorn treat', 'butter toffee & caramel flavors', 'Fiddle Faddle']
+Verbs: ['come']
+Matches: 1
+ -> HISTORY: {'come': 31}
+ -> SCIENCE: {'come': 38}
+ -> LITERATURE: {'come': 36}
+ -> MUSIC: {'come': 35}
+ -> GEOGRAPHY: {'come': 11}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: 1941: Boogie Woogie Bugle Boy
+Answer: The Andrews Sisters
+Nouns: ['Boogie Woogie Bugle', 'The Andrews Sisters']
+Verbs: []
+Matches: 0
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: A famous line in a James Weldon Johnson poem says, Young man -- young man -- your arm's too short to do this
+Answer: box with God
+Nouns: ['A famous line', 'a James Weldon Johnson poem', 'Young man', 'young man', 'your arm', 'box', 'God']
+Verbs: ['say', 'do']
+Matches: 4
+ -> HISTORY: {'God': 6, 'say': 58, 'do': 21}
+ -> SCIENCE: {'say': 25, 'do': 28}
+ -> LITERATURE: {'God': 8, 'say': 79, 'do': 20}
+ -> MUSIC: {'God': 8, 'say': 44, 'do': 42}
+ -> GEOGRAPHY: {'say': 5, 'do': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: Of Pastism, Presentism or Futurism, the literary movement that began around 1909
+Answer: Futurism
+Nouns: ['Pastism', 'Presentism', 'Futurism', 'the literary movement', 'Futurism']
+Verbs: ['begin']
+Matches: 1
+ -> HISTORY: {'begin': 71}
+ -> SCIENCE: {'begin': 10}
+ -> LITERATURE: {'begin': 58}
+ -> MUSIC: {'begin': 29}
+ -> GEOGRAPHY: {'begin': 9}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: MUSIC
+Question: TMZ went on the literary beat in 2009 when this partner of Jessica Lange was busted for a DUI
+Answer: Sam Shepard
+Nouns: ['TMZ', 'the literary beat', 'this partner', 'Jessica Lange', 'a DUI', 'Sam Shepard']
+Verbs: ['go', 'bust']
+Matches: 4
+ -> HISTORY: {'this partner': 1, 'go': 39}
+ -> SCIENCE: {'go': 19}
+ -> LITERATURE: {'go': 41, 'bust': 1}
+ -> MUSIC: {'Jessica Lange': 1, 'go': 53, 'bust': 1}
+ -> GEOGRAPHY: {'go': 7}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: Icky Thump was a No. 1 modern rock hit for this duo
+Answer: the White Stripes
+Nouns: ['Icky Thump', 'a No. 1 modern rock', 'this duo', 'the White Stripes']
+Verbs: ['hit']
+Matches: 3
+ -> HISTORY: {'this duo': 2, 'hit': 7}
+ -> SCIENCE: {'hit': 1}
+ -> LITERATURE: {'hit': 3}
+ -> MUSIC: {'this duo': 4, 'hit': 111}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: Selma Lagerlof, the first woman to win the Nobel Prize for Lit., was also the first person from this country to win it
+Answer: Sweden
+Nouns: ['Selma Lagerlof', 'the first woman', 'the Nobel Prize', 'Lit', 'the first person', 'this country', 'it', 'Sweden']
+Verbs: ['win', 'win']
+Matches: 12
+ -> HISTORY: {'the first woman': 4, 'the first person': 1, 'this country': 128, 'it': 188, 'Sweden': 4, 'win': 39}
+ -> SCIENCE: {'the Nobel Prize': 1, 'this country': 2, 'it': 176, 'Sweden': 2, 'win': 12}
+ -> LITERATURE: {'the Nobel Prize': 7, 'this country': 14, 'it': 72, 'Sweden': 3, 'win': 51}
+ -> MUSIC: {'the first person': 1, 'this country': 10, 'it': 156, 'win': 52}
+ -> GEOGRAPHY: {'this country': 60, 'it': 81, 'Sweden': 2, 'win': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: Sarcasm aside, this word from the Greek for burning describes a substance that causes corrosion
+Answer: caustic
+Nouns: ['this word', 'the Greek', 'a substance', 'corrosion']
+Verbs: ['burn', 'describe', 'cause']
+Matches: 9
+ -> HISTORY: {'this word': 7, 'the Greek': 3, 'a substance': 1, 'burn': 9, 'describe': 6, 'cause': 9}
+ -> SCIENCE: {'this word': 6, 'the Greek': 18, 'a substance': 6, 'burn': 2, 'describe': 9, 'cause': 25}
+ -> LITERATURE: {'this word': 2, 'the Greek': 1, 'burn': 8, 'describe': 20, 'cause': 1}
+ -> MUSIC: {'this word': 1, 'the Greek': 1, 'burn': 2, 'describe': 6, 'cause': 2}
+ -> GEOGRAPHY: {'this word': 2, 'the Greek': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: SCIENCE
+Question: The leader of the post-WWII style, sometimes called action painting; his work is seen here
+Answer: (Jackson) Pollock
+Nouns: ['The leader', 'the post-WWII style', 'action painting', 'his work', '(Jackson) Pollock']
+Verbs: ['call', 'see']
+Matches: 4
+ -> HISTORY: {'call': 73, 'see': 46}
+ -> SCIENCE: {'his work': 1, 'call': 74, 'see': 17}
+ -> LITERATURE: {'his work': 1, 'call': 76, 'see': 21}
+ -> MUSIC: {'call': 58, 'see': 35}
+ -> GEOGRAPHY: {'call': 39, 'see': 9}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: This state has a Custer County as well as one named Big Horn
+Answer: Montana
+Nouns: ['This state', 'a Custer County', 'Big Horn', 'Montana']
+Verbs: ['have', 'name']
+Matches: 6
+ -> HISTORY: {'This state': 2, 'Montana': 1, 'have': 95, 'name': 73}
+ -> SCIENCE: {'have': 99, 'name': 58}
+ -> LITERATURE: {'This state': 1, 'have': 58, 'name': 34}
+ -> MUSIC: {'This state': 2, 'have': 120, 'name': 38}
+ -> GEOGRAPHY: {'This state': 1, 'Montana': 3, 'have': 46, 'name': 60}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: ...Nearly every man in the village agreed she was the finest collie he had ever laid eyes on
+Answer: Lassie
+Nouns: ['Nearly every man', 'the village', 'she', 'the finest collie', 'he', 'eyes', 'Lassie']
+Verbs: ['agree', 'lay']
+Matches: 8
+ -> HISTORY: {'the village': 1, 'she': 65, 'he': 260, 'agree': 10, 'lay': 2}
+ -> SCIENCE: {'she': 7, 'he': 57, 'agree': 4, 'lay': 2}
+ -> LITERATURE: {'she': 58, 'he': 242, 'eyes': 1, 'agree': 1, 'lay': 1}
+ -> MUSIC: {'she': 38, 'he': 144, 'agree': 1}
+ -> GEOGRAPHY: {'she': 1, 'he': 3}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: As it has no mass, this particle travels at about 186,000 miles per second
+Answer: photon
+Nouns: ['it', 'no mass', 'this particle', 'about 186,000 miles', 'second', 'photon']
+Verbs: ['have', 'travel']
+Matches: 6
+ -> HISTORY: {'it': 188, 'second': 1, 'have': 95, 'travel': 4}
+ -> SCIENCE: {'it': 176, 'second': 2, 'have': 99, 'travel': 9}
+ -> LITERATURE: {'it': 72, 'have': 58, 'travel': 5}
+ -> MUSIC: {'it': 156, 'have': 120, 'travel': 2}
+ -> GEOGRAPHY: {'it': 81, 'have': 46}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: Mary Higgins Clark's recent book Silent Night takes place on the eve of this holiday
+Answer: Christmas
+Nouns: ["Mary Higgins Clark's recent book", 'Silent Night', 'place', 'the eve', 'this holiday', 'Christmas']
+Verbs: ['take']
+Matches: 7
+ -> HISTORY: {'place': 4, 'this holiday': 2, 'Christmas': 4, 'take': 59}
+ -> SCIENCE: {'place': 4, 'take': 18}
+ -> LITERATURE: {'place': 14, 'Christmas': 3, 'take': 43}
+ -> MUSIC: {'place': 5, 'this holiday': 1, 'Christmas': 1, 'take': 48}
+ -> GEOGRAPHY: {'place': 2, 'Christmas': 1, 'take': 5}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: Kansas City (where ev'rythin's up to date)
+Answer: Oklahoma!
+Nouns: ['Kansas City', "ev'rythin", 'date', 'Oklahoma']
+Verbs: ['be']
+Matches: 5
+ -> HISTORY: {'date': 1, 'Oklahoma': 4, 'be': 135}
+ -> SCIENCE: {'be': 76}
+ -> LITERATURE: {'Oklahoma': 1, 'be': 142}
+ -> MUSIC: {'Oklahoma': 9, 'be': 204}
+ -> GEOGRAPHY: {'Kansas City': 2, 'Oklahoma': 4, 'be': 42}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: MUSIC
+Question: Thomas Savery's contribution to British history was patenting the first of these engines in 1698
+Answer: a steam engine
+Nouns: ["Thomas Savery's contribution", 'British history', 'these engines', 'a steam engine']
+Verbs: ['patent']
+Matches: 1
+ -> HISTORY: {}
+ -> SCIENCE: {}
+ -> LITERATURE: {}
+ -> MUSIC: {'patent': 2}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: This drug marketed as Motrin was patented in Great Britain in 1964
+Answer: Ibuprofen
+Nouns: ['This drug', 'Motrin', 'Great Britain', 'Ibuprofen']
+Verbs: ['market', 'patent']
+Matches: 3
+ -> HISTORY: {'Great Britain': 10, 'market': 1}
+ -> SCIENCE: {}
+ -> LITERATURE: {'Great Britain': 1}
+ -> MUSIC: {'patent': 2}
+ -> GEOGRAPHY: {'Great Britain': 4}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: Ray Brown, Percy Heath & Charles Mingus were stand-up guys as masters of this instrument
+Answer: the double bass
+Nouns: ['Ray Brown', 'Percy Heath', 'Charles Mingus', 'stand-up guys', 'masters', 'this instrument', 'the double bass']
+Verbs: ['stand']
+Matches: 3
+ -> HISTORY: {'this instrument': 1, 'stand': 14}
+ -> SCIENCE: {'this instrument': 4, 'stand': 20}
+ -> LITERATURE: {'stand': 7}
+ -> MUSIC: {'this instrument': 53, 'stand': 13}
+ -> GEOGRAPHY: {'stand': 7}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: General Mills makes this snack with an unusual funnel shape in 6 flavors
+Answer: Bugles
+Nouns: ['General Mills', 'this snack', 'an unusual funnel shape', '6 flavors', 'Bugles']
+Verbs: ['make']
+Matches: 1
+ -> HISTORY: {'make': 82}
+ -> SCIENCE: {'make': 67}
+ -> LITERATURE: {'make': 38}
+ -> MUSIC: {'make': 66}
+ -> GEOGRAPHY: {'make': 14}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: If you're looking for Mr. (Robin) Goodfellow, ask for this Shakespearean character
+Answer: Puck
+Nouns: ['you', 'Mr. (Robin) Goodfellow', 'this Shakespearean character', 'Puck']
+Verbs: ['look', 'ask']
+Matches: 4
+ -> HISTORY: {'you': 16, 'look': 7, 'ask': 4}
+ -> SCIENCE: {'you': 52, 'look': 5, 'ask': 2}
+ -> LITERATURE: {'you': 27, 'look': 14, 'ask': 14}
+ -> MUSIC: {'you': 83, 'look': 10, 'ask': 14}
+ -> GEOGRAPHY: {'you': 24, 'look': 2}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: Austen's walking sticks
+Answer: Jane's canes
+Nouns: ["Austen's walking sticks", "Jane's canes"]
+Verbs: []
+Matches: 0
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: This conductor, later seen on television, gained fame substituting on a 1943 New York Philharmonic radio broadcast
+Answer: Leonard Bernstein
+Nouns: ['This conductor', 'television', 'fame', 'Leonard Bernstein']
+Verbs: ['see', 'gain', 'substitute', 'broadcast']
+Matches: 7
+ -> HISTORY: {'television': 1, 'fame': 1, 'see': 46, 'gain': 13, 'broadcast': 2}
+ -> SCIENCE: {'see': 17, 'gain': 2}
+ -> LITERATURE: {'fame': 3, 'see': 21, 'gain': 2}
+ -> MUSIC: {'fame': 8, 'Leonard Bernstein': 6, 'see': 35, 'gain': 2}
+ -> GEOGRAPHY: {'see': 9, 'gain': 3}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: In a Billy Joel hit, she's looking for a downtown man
+Answer: an Uptown Girl
+Nouns: ['a Billy Joel', 'she', 'a downtown man', 'an Uptown Girl']
+Verbs: ['hit', 'look']
+Matches: 4
+ -> HISTORY: {'she': 65, 'hit': 7, 'look': 7}
+ -> SCIENCE: {'she': 7, 'hit': 1, 'look': 5}
+ -> LITERATURE: {'she': 58, 'hit': 3, 'look': 14}
+ -> MUSIC: {'she': 38, 'hit': 111, 'look': 10}
+ -> GEOGRAPHY: {'she': 1, 'look': 2}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: Activia says its yogurt is creamy & full of this type of culture that boosts health
+Answer: probiotic
+Nouns: ['Activia', 'its yogurt', 'this type', 'culture', 'health']
+Verbs: ['say', 'boost']
+Matches: 5
+ -> HISTORY: {'this type': 5, 'culture': 1, 'say': 58}
+ -> SCIENCE: {'this type': 43, 'say': 25}
+ -> LITERATURE: {'this type': 6, 'health': 1, 'say': 79}
+ -> MUSIC: {'this type': 12, 'say': 44}
+ -> GEOGRAPHY: {'this type': 1, 'say': 5}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: The north part of this Pacific sea off Australia's Queensland state is known as the Solomon Sea
+Answer: Coral Sea
+Nouns: ['The north part', 'this Pacific sea', "Australia's Queensland state", 'the Solomon Sea', 'Coral Sea']
+Verbs: ['know']
+Matches: 1
+ -> HISTORY: {'know': 75}
+ -> SCIENCE: {'know': 42}
+ -> LITERATURE: {'know': 45}
+ -> MUSIC: {'know': 67}
+ -> GEOGRAPHY: {'know': 42}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: He died at age 28,  just 5 years after his Civil War novel was published
+Answer: "Stephen Crane (\""The Red Badge of Courage\"")"
+Nouns: ['He', 'age', 'his Civil War novel', '"Stephen Crane', '\\""The Red Badge']
+Verbs: ['die', 'publish']
+Matches: 6
+ -> HISTORY: {'He': 54, 'age': 10, 'die': 43, 'publish': 8}
+ -> SCIENCE: {'He': 16, 'age': 2, 'die': 11, 'publish': 13}
+ -> LITERATURE: {'He': 133, 'age': 9, 'die': 28, 'publish': 139}
+ -> MUSIC: {'He': 56, 'age': 7, 'die': 14, 'publish': 4}
+ -> GEOGRAPHY: {'die': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: A Bell For Adano
+Answer: John Hersey
+Nouns: ['A Bell', 'Adano', 'John Hersey']
+Verbs: []
+Matches: 0
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: She refused a 1990 Grammy for best alternative performance for I Do Not Want What I Haven't Got
+Answer: (Sinead) O'Connor
+Nouns: ['She', 'a 1990 Grammy', 'best alternative performance', 'I', 'What', 'I', "(Sinead) O'Connor"]
+Verbs: ['refuse', 'want', 'get']
+Matches: 11
+ -> HISTORY: {'She': 25, 'I': 69, 'What': 1, 'refuse': 4, 'want': 10, 'get': 39}
+ -> SCIENCE: {'I': 2, 'What': 2, 'refuse': 1, 'want': 4, 'get': 22}
+ -> LITERATURE: {'She': 56, 'I': 103, 'What': 5, 'refuse': 4, 'want': 3, 'get': 20}
+ -> MUSIC: {'She': 25, 'I': 205, 'What': 8, 'refuse': 1, 'want': 26, 'get': 45}
+ -> GEOGRAPHY: {'I': 4, 'What': 1, 'want': 3, 'get': 3}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: LITERATURE
+Question: In 1999 this Broadway musical was advertised with the line: Before the Century Ends, See How It All Began
+Answer: Ragtime
+Nouns: ['the line', 'the Century Ends', 'It', 'Ragtime']
+Verbs: ['advertise', 'see', 'begin']
+Matches: 8
+ -> HISTORY: {'It': 57, 'see': 46, 'begin': 71}
+ -> SCIENCE: {'It': 68, 'see': 17, 'begin': 10}
+ -> LITERATURE: {'the line': 11, 'It': 43, 'Ragtime': 2, 'see': 21, 'begin': 58}
+ -> MUSIC: {'the line': 6, 'It': 98, 'see': 35, 'begin': 29}
+ -> GEOGRAPHY: {'It': 46, 'see': 9, 'begin': 9}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: Charles Perrault's 1697 work Contes de Ma Mere l'Oye was a collection of these
+Answer: Mother Goose stories
+Nouns: ["Charles Perrault's 1697 work", 'Contes de Ma', "Mere l'Oye", 'a collection', 'Mother Goose stories']
+Verbs: []
+Matches: 2
+ -> HISTORY: {'a collection': 2}
+ -> SCIENCE: {'a collection': 1}
+ -> LITERATURE: {'a collection': 9}
+ -> MUSIC: {'a collection': 1}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: This country is so huge that it occupies nearly half of South America's land area
+Answer: Brazil
+Nouns: ['This country', 'it', 'nearly half', "South America's land area", 'Brazil']
+Verbs: ['occupy']
+Matches: 7
+ -> HISTORY: {'This country': 2, 'it': 188, 'Brazil': 7, 'occupy': 6}
+ -> SCIENCE: {'it': 176}
+ -> LITERATURE: {'it': 72, 'Brazil': 1, 'occupy': 1}
+ -> MUSIC: {'it': 156}
+ -> GEOGRAPHY: {'This country': 8, 'it': 81, 'Brazil': 8, 'occupy': 6}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: SCIENCE
+Question: This stately river carved the Black Canyon as well as the Grand Canyon
+Answer: Colorado River
+Nouns: ['This stately river', 'the Black Canyon', 'the Grand Canyon', 'Colorado River']
+Verbs: ['carve']
+Matches: 2
+ -> HISTORY: {'carve': 3}
+ -> SCIENCE: {'the Grand Canyon': 1}
+ -> LITERATURE: {'carve': 1}
+ -> MUSIC: {}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: LITERATURE
+Question: In 1981 this group topped the charts singing, Here I am, the one that you love, askin' for another day
+Answer: Air Supply
+Nouns: ['this group', 'the charts singing', 'I', 'the one', 'you', 'askin', 'another day', 'Air Supply']
+Verbs: ['top', 'be', 'love']
+Matches: 12
+ -> HISTORY: {'this group': 12, 'I': 69, 'you': 16, 'top': 1, 'be': 135, 'love': 4}
+ -> SCIENCE: {'this group': 1, 'I': 2, 'the one': 3, 'you': 52, 'be': 76, 'love': 2}
+ -> LITERATURE: {'this group': 2, 'I': 103, 'the one': 3, 'you': 27, 'another day': 1, 'be': 142, 'love': 14}
+ -> MUSIC: {'this group': 25, 'I': 205, 'you': 83, 'top': 9, 'be': 204, 'love': 19}
+ -> GEOGRAPHY: {'I': 4, 'you': 24, 'be': 42}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: LITERATURE
+Question: Ideally, this, the apparent boundary between the sky & the Earth, is at 90 degrees from the zenith
+Answer: Horizon
+Nouns: ['the apparent boundary', 'the sky', 'the Earth', '90 degrees', 'the zenith', 'Horizon']
+Verbs: []
+Matches: 6
+ -> HISTORY: {'the Earth': 1}
+ -> SCIENCE: {'the sky': 1, 'the Earth': 20}
+ -> LITERATURE: {'the sky': 2, 'the Earth': 3, 'Horizon': 1}
+ -> MUSIC: {'the sky': 1}
+ -> GEOGRAPHY: {'the Earth': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: As a youngster this Billy Budd author worked in his brother's fur store in Albany
+Answer: Herman Melville
+Nouns: ['a youngster', 'this Billy Budd author', "his brother's fur store", 'Albany', 'Herman Melville']
+Verbs: ['work']
+Matches: 3
+ -> HISTORY: {'Albany': 1, 'work': 11}
+ -> SCIENCE: {'work': 5}
+ -> LITERATURE: {'Herman Melville': 14, 'work': 22}
+ -> MUSIC: {'Herman Melville': 1, 'work': 13}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: It's defined as an atom or group of atoms that has an electrical charge
+Answer: Ion
+Nouns: ['It', 'an atom', 'group', 'atoms', 'an electrical charge', 'Ion']
+Verbs: ['define', 'have']
+Matches: 8
+ -> HISTORY: {'It': 57, 'an atom': 1, 'atoms': 1, 'define': 1, 'have': 95}
+ -> SCIENCE: {'It': 68, 'an atom': 7, 'atoms': 5, 'define': 9, 'have': 99}
+ -> LITERATURE: {'It': 43, 'have': 58}
+ -> MUSIC: {'It': 98, 'have': 120}
+ -> GEOGRAPHY: {'It': 46, 'define': 1, 'have': 46}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: SCIENCE
+Question: This 3-word Virginia village, site of a surrender, was made a National Historic Park in 1954
+Answer: Appomattox Court House
+Nouns: ['This 3-word Virginia village', 'site', 'a surrender', 'a National Historic Park', 'Appomattox Court House']
+Verbs: ['make']
+Matches: 3
+ -> HISTORY: {'make': 82}
+ -> SCIENCE: {'site': 1, 'make': 67}
+ -> LITERATURE: {'make': 38}
+ -> MUSIC: {'make': 66}
+ -> GEOGRAPHY: {'make': 14}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: 2 songs from this Civil War epic were nominated for Academy Awards in 2004
+Answer: Cold Mountain
+Nouns: ['2 songs', 'this Civil War epic', 'Academy Awards', 'Cold Mountain']
+Verbs: ['nominate']
+Matches: 1
+ -> HISTORY: {'nominate': 3}
+ -> SCIENCE: {}
+ -> LITERATURE: {'nominate': 2}
+ -> MUSIC: {'nominate': 4}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: HISTORY
+Question: A brain disease is named for Hans Creutzfeldt & this man who also described it around 1920
+Answer: Alfons Jakob
+Nouns: ['A brain disease', 'Hans Creutzfeldt', 'this man', 'who', 'it', 'Alfons Jakob']
+Verbs: ['name', 'describe']
+Matches: 8
+ -> HISTORY: {'this man': 38, 'who': 91, 'it': 188, 'name': 73, 'describe': 6}
+ -> SCIENCE: {'this man': 8, 'who': 30, 'it': 176, 'name': 58, 'describe': 9}
+ -> LITERATURE: {'this man': 14, 'who': 102, 'it': 72, 'name': 34, 'describe': 20}
+ -> MUSIC: {'this man': 13, 'who': 67, 'it': 156, 'name': 38, 'describe': 6}
+ -> GEOGRAPHY: {'this man': 1, 'who': 15, 'it': 81, 'name': 60}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: LITERATURE
+Question: The Liberty Bell cracked July 8, 1835 while tolling this Chief Justice's death
+Answer: (John) Marshall
+Nouns: ['The Liberty Bell', "this Chief Justice's death", '(John) Marshall']
+Verbs: ['crack', 'toll']
+Matches: 2
+ -> HISTORY: {'crack': 1}
+ -> SCIENCE: {'crack': 1}
+ -> LITERATURE: {'crack': 1, 'toll': 3}
+ -> MUSIC: {'crack': 2}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: LITERATURE
+Question: In 1967 Dionne Warwick sang, While combing my hair, now, and wondering what dress to wear, now, I do this
+Answer: say a little prayer for you
+Nouns: ['Dionne Warwick', 'my hair', 'what dress', 'I', 'a little prayer', 'you']
+Verbs: ['sing', 'comb', 'wonder', 'wear', 'do', 'say']
+Matches: 11
+ -> HISTORY: {'I': 69, 'you': 16, 'sing': 3, 'comb': 1, 'wear': 21, 'do': 21, 'say': 58}
+ -> SCIENCE: {'I': 2, 'you': 52, 'sing': 1, 'wonder': 2, 'wear': 1, 'do': 28, 'say': 25}
+ -> LITERATURE: {'my hair': 1, 'I': 103, 'you': 27, 'sing': 4, 'wonder': 4, 'wear': 11, 'do': 20, 'say': 79}
+ -> MUSIC: {'Dionne Warwick': 4, 'I': 205, 'you': 83, 'sing': 84, 'wonder': 2, 'wear': 5, 'do': 42, 'say': 44}
+ -> GEOGRAPHY: {'I': 4, 'you': 24, 'sing': 2, 'wear': 1, 'do': 1, 'say': 5}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: SCIENCE
+Question: Only Dag Hammarskjold & Erik Karlfeldt have been awarded a Nobel Prize this way; it's not allowed anyore
+Answer: posthumously
+Nouns: ['Only Dag Hammarskjold', 'Erik Karlfeldt', 'a Nobel Prize', 'it']
+Verbs: ['award', 'allow']
+Matches: 6
+ -> HISTORY: {'it': 188, 'award': 2, 'allow': 11}
+ -> SCIENCE: {'a Nobel Prize': 6, 'it': 176, 'award': 1, 'allow': 4}
+ -> LITERATURE: {'a Nobel Prize': 5, 'it': 72, 'award': 3, 'allow': 1}
+ -> MUSIC: {'it': 156, 'award': 1, 'allow': 2}
+ -> GEOGRAPHY: {'it': 81, 'allow': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: LITERATURE
+Question: The book of Matthew, Mark, Luke or John
+Answer: Gospel
+Nouns: ['The book', 'Matthew', 'Mark', 'Luke', 'John', 'Gospel']
+Verbs: []
+Matches: 4
+ -> HISTORY: {'John': 3}
+ -> SCIENCE: {}
+ -> LITERATURE: {'The book': 2, 'John': 3}
+ -> MUSIC: {'Matthew': 2}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: A puritanical tale: A Note From Miss Johansson
+Answer: The Scarlet Letter
+Nouns: ['A puritanical tale', 'A Note', 'Miss Johansson', 'The Scarlet Letter']
+Verbs: []
+Matches: 2
+ -> HISTORY: {'The Scarlet Letter': 1}
+ -> SCIENCE: {}
+ -> LITERATURE: {'The Scarlet Letter': 9}
+ -> MUSIC: {}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: His Fictional Memoir about his last African safari was published in 1999, 38 years after his death
+Answer: Ernest Hemingway
+Nouns: ['His Fictional Memoir', 'his last African safari', 'his death', 'Ernest Hemingway']
+Verbs: ['publish']
+Matches: 5
+ -> HISTORY: {'his death': 3, 'Ernest Hemingway': 1, 'publish': 8}
+ -> SCIENCE: {'his death': 2, 'publish': 13}
+ -> LITERATURE: {'his death': 11, 'Ernest Hemingway': 12, 'publish': 139}
+ -> MUSIC: {'his death': 5, 'publish': 4}
+ -> GEOGRAPHY: {}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: LITERATURE
+Question: In 1801 this American boat designer tried to sell his submarine to Napoleon
+Answer: Fulton
+Nouns: ['this American boat designer', 'his submarine', 'Napoleon', 'Fulton']
+Verbs: ['try', 'sell']
+Matches: 6
+ -> HISTORY: {'Napoleon': 18, 'try': 20, 'sell': 11}
+ -> SCIENCE: {'his submarine': 1, 'try': 6, 'sell': 3}
+ -> LITERATURE: {'his submarine': 1, 'Napoleon': 2, 'try': 6, 'sell': 11}
+ -> MUSIC: {'try': 7, 'sell': 13}
+ -> GEOGRAPHY: {'Napoleon': 1, 'try': 2}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['SCIENCE']           ->            Obtained: LITERATURE
+Question: He died on May 24, 1543, just after receiving the first copy of his book On the Revolutions of Heavenly Bodies
+Answer: Nicolaus Copernicus
+Nouns: ['He', 'May', 'the first copy', 'his book', 'the Revolutions', 'Heavenly Bodies', 'Nicolaus Copernicus']
+Verbs: ['die', 'receive']
+Matches: 8
+ -> HISTORY: {'He': 54, 'May': 35, 'die': 43, 'receive': 11}
+ -> SCIENCE: {'He': 16, 'his book': 1, 'die': 11, 'receive': 11}
+ -> LITERATURE: {'He': 133, 'May': 1, 'his book': 6, 'die': 28, 'receive': 4}
+ -> MUSIC: {'He': 56, 'May': 4, 'die': 14, 'receive': 5}
+ -> GEOGRAPHY: {'die': 1, 'receive': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['GEOGRAPHY']           ->            Obtained: HISTORY
+Question: This South Dakota peak near Rapid City was named for a New York attorney, who represented mining investors
+Answer: Mount Rushmore
+Nouns: ['This South Dakota peak', 'Rapid City', 'a New York attorney', 'who', 'mining investors', 'Mount Rushmore']
+Verbs: ['name', 'represent']
+Matches: 4
+ -> HISTORY: {'who': 91, 'name': 73, 'represent': 1}
+ -> SCIENCE: {'who': 30, 'name': 58, 'represent': 7}
+ -> LITERATURE: {'who': 102, 'name': 34, 'represent': 3}
+ -> MUSIC: {'who': 67, 'name': 38, 'represent': 2}
+ -> GEOGRAPHY: {'who': 15, 'name': 60, 'represent': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['HISTORY']           ->            Obtained: SCIENCE
+Question: These professional warriors wore 2 swords as a symbol of their caste
+Answer: Samurai
+Nouns: ['These professional warriors', '2 swords', 'a symbol', 'their caste', 'Samurai']
+Verbs: ['wear']
+Matches: 3
+ -> HISTORY: {'wear': 21}
+ -> SCIENCE: {'a symbol': 1, 'wear': 1}
+ -> LITERATURE: {'wear': 11}
+ -> MUSIC: {'wear': 5}
+ -> GEOGRAPHY: {'wear': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: HISTORY
+Question: This form of light opera with spoken dialogue evolved from the opera comique & led to the musical
+Answer: Operetta
+Nouns: ['This form', 'light opera', 'spoken dialogue', 'the opera comique', 'Operetta']
+Verbs: ['evolve', 'lead']
+Matches: 2
+ -> HISTORY: {'evolve': 2, 'lead': 64}
+ -> SCIENCE: {'evolve': 1, 'lead': 8}
+ -> LITERATURE: {'lead': 6}
+ -> MUSIC: {'evolve': 2, 'lead': 17}
+ -> GEOGRAPHY: {'lead': 4}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['MUSIC']           ->            Obtained: GEOGRAPHY
+Question: Jim Henson's Creature Shop created a dancing pushmi-pullyu for the musical about this doctor who talks to animals
+Answer: Doctor Dolittle
+Nouns: ["Jim Henson's Creature Shop", 'a dancing pushmi', '-pullyu', 'this doctor', 'who', 'animals', 'Doctor Dolittle']
+Verbs: ['create', 'talk']
+Matches: 6
+ -> HISTORY: {'who': 91, 'animals': 1, 'create': 23}
+ -> SCIENCE: {'who': 30, 'create': 13}
+ -> LITERATURE: {'who': 102, 'create': 22, 'talk': 4}
+ -> MUSIC: {'who': 67, 'create': 7, 'talk': 4}
+ -> GEOGRAPHY: {'who': 15, 'animals': 1, 'create': 7, 'talk': 1}
+-----------------------------------------------------------
+
+-----------------------------------------------------------
+Correct: ['LITERATURE']           ->            Obtained: HISTORY
+Question: Charles Dickens' A Tale of Two Cities takes place during this struggle
+Answer: the French Revolution
+Nouns: ["Charles Dickens' A Tale", 'Two Cities', 'place', 'this struggle', 'the French Revolution']
+Verbs: ['take']
+Matches: 7
+ -> HISTORY: {'Two Cities': 1, 'place': 4, 'the French Revolution': 5, 'take': 59}
+ -> SCIENCE: {'place': 4, 'take': 18}
+ -> LITERATURE: {'Two Cities': 7, 'place': 14, 'take': 43}
+ -> MUSIC: {'place': 5, 'take': 48}
+ -> GEOGRAPHY: {'place': 2, 'take': 5}
+-----------------------------------------------------------
+

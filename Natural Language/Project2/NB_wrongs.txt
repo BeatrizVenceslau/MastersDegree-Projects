@@ -1,0 +1,294 @@
+-------------------------------------------------------------------
+Question and answer: ['form', 'here', 'instrument', 'kept', 'see', 'time', 'use']
+Resposta Pretendida: SCIENCE
+Resposta Obtida: MUSIC
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['city', 'data_format', 'dublin', 'during', 'easter', 'monday', 'office', 'on', 'post', 'rise', 'take', 'their']
+Resposta Pretendida: GEOGRAPHY
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['king', 'lion', 'monarch']
+Resposta Pretendida: MUSIC
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['be', 'by', 'for', 'hotel', 'mexican', 'night', 'of', 'play', 'set', 'tennessee', 'williams', 'writer']
+Resposta Pretendida: LITERATURE
+Resposta Obtida: MUSIC
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['be', 'by', 'city', 'lebanon', 'mediterranean', 'mostly', 'now', 'occupy', 'of', 'region', 'state']
+Resposta Pretendida: HISTORY
+Resposta Obtida: GEOGRAPHY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['mike']
+Resposta Pretendida: MUSIC
+Resposta Obtida: LITERATURE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['allen', 'data_format', 'first', 'for', 'host', 'meeting', 'minds', 'pbs', 'show', 'steve', 'tonight']
+Resposta Pretendida: HISTORY
+Resposta Obtida: MUSIC
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['achieve', 'around', 'be', 'before', 'brazil', 'dance', 'data_format', 'decade', 'for', 'popular', 'popularity', 'us']
+Resposta Pretendida: HISTORY
+Resposta Obtida: MUSIC
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['because', 'dress', 'for', 'hawaiian', 'name', 'of', 'originally', 'yoke']
+Resposta Pretendida: HISTORY
+Resposta Obtida: SCIENCE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['city', 'data_format', 'december', 'john', 'lennon', 'new', 'york']
+Resposta Pretendida: MUSIC
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['beyond', 'caribbean', 'he', 'his', 'james', 'michener', 'novel', 'poland', 'space', 'travel', 'with', 'world']
+Resposta Pretendida: HISTORY
+Resposta Obtida: LITERATURE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['colony', 'data_format', 'island', 'join', 'single', 'tobago', 'trinidad', 'up', 'with']
+Resposta Pretendida: HISTORY
+Resposta Obtida: GEOGRAPHY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['australia', 'become', 'capt', 'coast', 'cook', 'data_format', 'east', 'european', 'fertile', 'first', 'he', 'james', 'name', 'new', 'sight', 'south', 'to', 'wales', 'which']
+Resposta Pretendida: HISTORY
+Resposta Obtida: GEOGRAPHY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['drawn', 'english', 'for', 'from', 'include', 'language', 'moose', 'other']
+Resposta Pretendida: HISTORY
+Resposta Obtida: LITERATURE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['fine', 'her', 'horse', 'house', 'lady', 'martha', 'of', 'once', 'rode', 'uncle', 'up', 'us', 'washington']
+Resposta Pretendida: HISTORY
+Resposta Obtida: LITERATURE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['joan']
+Resposta Pretendida: MUSIC
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['ariel', 'moore', 'reverend']
+Resposta Pretendida: MUSIC
+Resposta Obtida: LITERATURE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['air', 'data_format', 'early', 'first', 'from', 'hg', 'his', 'men', 'moon', 'prove', 'war', 'wells']
+Resposta Pretendida: LITERATURE
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['between', 'crescent', 'curve', 'fertile', 'for', 'historic', 'mediterranean', 'mesopotamia', 'nickname', 'region']
+Resposta Pretendida: HISTORY
+Resposta Obtida: GEOGRAPHY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['alexander', 'country', 'east', 'far', 'great', 'his', 'india', 'lead', 'now', 'river', 'troop']
+Resposta Pretendida: GEOGRAPHY
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['after', 'american', 'book', 'dust', 'group', 'kansas', 'native', 'of', 'poetry', 'reading', 'wind', 'write']
+Resposta Pretendida: MUSIC
+Resposta Obtida: LITERATURE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['birthplace', 'country', 'ernest', 'his', 'honor', 'its', 'land', 'mountains', 'of', 'orchestral', 'people', 'switzerland', 'work']
+Resposta Pretendida: MUSIC
+Resposta Obtida: GEOGRAPHY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['chance', 'discover', 'give', 'gregor', 'have', 'he', 'heredity', 'law', 'mendel', 'might', 'monk', 'of', 'plant', 'say', 'to', 'use']
+Resposta Pretendida: HISTORY
+Resposta Obtida: SCIENCE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['among', 'card', 'collector', 'first', 'grail', 'holy', 'mantle', 'mickey', 'no', 'player', 'series']
+Resposta Pretendida: HISTORY
+Resposta Obtida: LITERATURE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['born', 'chopin', 'compose', 'composer', 'data_format', 'french', 'he', 'only', 'polish', 'polonaise', 'when', 'who']
+Resposta Pretendida: HISTORY
+Resposta Obtida: MUSIC
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['22', 'again', 'blew', 'erupt', 'helens', 'mount', 'november', 'on', 'st', 'top', 'volcano', 'washington']
+Resposta Pretendida: GEOGRAPHY
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['celebrity', 'data_format', 'form', 'have', 'it', 'meant', 'men', 'refers', 'since', 'to', 'word']
+Resposta Pretendida: HISTORY
+Resposta Obtida: SCIENCE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['anglo', 'be', 'by', 'confessor', 'king', 'know', 'saxon', 'title']
+Resposta Pretendida: HISTORY
+Resposta Obtida: LITERATURE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['arc', 'joan', 'of', 'saint', 'scorch', 'shaw', 'st']
+Resposta Pretendida: LITERATURE
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['call', 'glimpse', 'grande', 'his', 'include', 'la', 'large', 'masterpiece', 'of', 'painting', 'seurat']
+Resposta Pretendida: HISTORY
+Resposta Obtida: GEOGRAPHY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['at', 'be', 'by', 'create', 'end', 'found', 'french', 'line', 'ludwig', 'madeline', 'of', 'often', 'title']
+Resposta Pretendida: LITERATURE
+Resposta Obtida: MUSIC
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['collie', 'come', 'data_format', 'eric', 'home', 'knight', 'lead', 'male', 'movie', 'novel', 'of', 'pal', 'played', 'version']
+Resposta Pretendida: LITERATURE
+Resposta Obtida: MUSIC
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['about', 'become', 'country', 'data_format', 'now']
+Resposta Pretendida: HISTORY
+Resposta Obtida: GEOGRAPHY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['african', 'game', 'roosevelt', 'teddy']
+Resposta Pretendida: LITERATURE
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['be', 'by', 'citizenship', 'country', 'czechoslovakia', 'data_format', 'government', 'his', 'milan', 'of', 'strip']
+Resposta Pretendida: LITERATURE
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['butter', 'come', 'fiddle', 'flavor', 'sweet', 'treat']
+Resposta Pretendida: MUSIC
+Resposta Obtida: SCIENCE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['be', 'beat', 'bust', 'data_format', 'for', 'go', 'jessica', 'lange', 'literary', 'of', 'on', 'partner', 'sam', 'shepard', 'when']
+Resposta Pretendida: LITERATURE
+Resposta Obtida: MUSIC
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['chain', 'change', 'data_format', 'food', 'hat', 'name', 'of', 'oklahoma', 'serve', 'sonic', 'sound', 'speed', 'to', 'top']
+Resposta Pretendida: HISTORY
+Resposta Obtida: SCIENCE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['baltic', 'data_format', 'europe', 'large', 'lithuania', 'make', 'poland', 'union', 'with']
+Resposta Pretendida: HISTORY
+Resposta Obtida: GEOGRAPHY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['an', 'data_format', 'discover', 'during', 'expedition', 'lake', 'mississippi', 'of', 'river', 'source', 'to']
+Resposta Pretendida: HISTORY
+Resposta Obtida: GEOGRAPHY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['city', 'date', 'ev', 'kansas', 'oklahoma', 'to', 'up', 'where']
+Resposta Pretendida: MUSIC
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['be', 'british', 'contribution', 'data_format', 'first', 'history', 'of', 'patent', 'savery', 'steam', 'these', 'thomas', 'to']
+Resposta Pretendida: HISTORY
+Resposta Obtida: SCIENCE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['be', 'britain', 'data_format', 'drug', 'great', 'market', 'patent']
+Resposta Pretendida: SCIENCE
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['an', 'flavor', 'general', 'make', 'shape', 'unusual', 'with']
+Resposta Pretendida: MUSIC
+Resposta Obtida: SCIENCE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['be', 'become', 'data_format', 'dramatist', 'he', 'historian', 'jean', 'louis', 'official', 'play', 'produce', 'racine', 'xiv']
+Resposta Pretendida: LITERATURE
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['arte', 'commedia', 'data_format', 'dell', 'have', 'it', 'leoncavallo', 'of', 'opera', 'pagliacci', 'within']
+Resposta Pretendida: MUSIC
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['book', 'gospel', 'john', 'luke', 'mark', 'matthew', 'of', 'or']
+Resposta Pretendida: MUSIC
+Resposta Obtida: LITERATURE
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['24', 'after', 'book', 'copernicus', 'copy', 'data_format', 'die', 'first', 'he', 'heavenly', 'his', 'just', 'may', 'receive', 'revolutions']
+Resposta Pretendida: SCIENCE
+Resposta Obtida: HISTORY
+-------------------------------------------------------------------
+
+-------------------------------------------------------------------
+Question and answer: ['caste', 'of', 'professional', 'sword', 'symbol', 'their', 'these', 'warrior', 'wore']
+Resposta Pretendida: HISTORY
+Resposta Obtida: SCIENCE
+-------------------------------------------------------------------
+
