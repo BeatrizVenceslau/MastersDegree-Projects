@@ -3,4 +3,4 @@
  
  1st Year, 1st Semester
  
- *Optional Subject (belongs to the speciatilation course of <u>Enterprise Systems</u>)*
+ *Optional Subject (belongs to the speciatilation course of Enterprise Systems)*
