@@ -6,4 +6,4 @@ They are organized in folders by course
 Each subject falls under one of 3 umbrellas:
   * the specialization course of **Artificial Inteligence**
   * the specialization course of **Computer Science Systems**
-  * or as an optional subject
+  * or as an **Optional** subject
