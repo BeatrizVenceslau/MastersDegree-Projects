@@ -1,0 +1,59 @@
+{
+    "random": {
+        "agents": "R",
+        "name": "Random Team"
+    },
+
+    "greedy": {
+        "agents": "G",
+        "name": "Greedy Team"
+    },
+
+    "cautious": {
+        "agents": "C",
+        "name": "Cautious Team"
+    },
+
+    "decent": {
+        "agents": "D",
+        "name": "Decent Team"
+    },
+
+    "single": [
+        "random",
+        "greedy",
+        "cautious",
+        "decent"
+    ],
+
+    "greedy+cautious": {
+        "agents": "GC",
+        "name": "Greedy+Cautious Team"
+    },
+
+    "greedy+decent": {
+        "agents": "GD",
+        "name": "Greedy+Decent Team"
+    },
+
+    "cautious+decent": {
+        "agents": "CD",
+        "name": "Cautious+Decent Team"
+    },
+
+    "multiple": [
+        "greedy+cautious",
+        "greedy+decent",
+        "cautious+decent"
+    ],
+
+    "all": [
+        "random",
+        "greedy",
+        "cautious",
+        "decent",
+        "greedy+cautious",
+        "greedy+decent",
+        "cautious+decent"
+    ]
+}
