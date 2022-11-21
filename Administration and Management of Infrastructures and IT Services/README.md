@@ -5,4 +5,4 @@ Used automation tools such as Terraform and Ansible, as well as implemented inst
 
 2nd Year, 1st Semester
 
-*Subject chosen under the **System Enterprises** specialization course*
+*Subject chosen under the **Enterprise Systems** specialization course*
