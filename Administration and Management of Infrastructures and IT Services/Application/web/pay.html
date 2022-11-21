@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+
+      <!--favicon-->
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+  </head>
+  <body>
+    <div class="top_banner">
+      <a href="/">
+        <img src="images/logo_small.png" id="logo">
+      </a>
+    </div>
+
+    <div class="container" style='float:leftt'>          
+      <table id="table" class="table table-hover row-clickable">
+        <thead>
+          <tr hidden>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr >
+            <th id="showtime"></th>
+            <th id="cinema"></th>
+          </tr>
+          <tr id="food"></tr>
+        </tbody>
+      </table>
+      <h4 id="price"></h4>
+      <a href="success.html">
+        <button onclick="pay()" id="pay">PAY</button>
+      </a>
+    </div>
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const showtime_id = urlParams.get('showtime');
+      const seats = urlParams.get('seatsNew');
+      const price = urlParams.get('price');
+      const popcorn = urlParams.get('popcorn');
+      const drinks = urlParams.get('drinks');
+
+      $(document).ready(function(){
+        $("#price").text("Total: " + price + "\u20AC");
+      });
+
+      function loadInfoFromApi(tableId){
+        $.ajax({
+          type: "GET",
+          url: "/api/showtime.php",
+          dataType: 'json',
+          data: {
+            showtime_id: showtime_id,
+          },
+          success: function addSessionTime(showtime){
+            let showtimeCell = document.getElementById("showtime");
+            showtimeCell.innerHTML='<h3>'+showtime[0].showtime+'</h3>';
+
+            loadCinemaFromApi(showtime[0].cinema_id);
+          }
+        });
+      }
+
+      function loadCinemaFromApi(cinema_id){
+        $.ajax({
+          type: "GET",
+          url: "/api/cinemas.php",
+          dataType: 'json',
+          data: {
+            cinema_id: cinema_id,
+          },
+          success: function addCinema(cinema){
+            let cinemaCell = document.getElementById("cinema");
+            cinemaCell.innerHTML='<h3>'+cinema[0].name+'</h3>';
+          }
+        });
+      }
+
+      function loadFoodInfo(tableId){
+        let foodRow = document.getElementById("food");
+
+        let food = foodRow.insertCell(0);
+        food.innerHTML='<p>Requested Food: </p>';
+        let numbers = foodRow.insertCell(1);
+        numbers.innerHTML+='<p>Popcorn: '+popcorn+'</p><p>Drinks: '+drinks+'</p>';
+      }
+
+      function loadSeatsInfo(tableId){
+        let tableRef = document.getElementById(tableId);
+        let row = tableRef.insertRow(-1);
+        
+        let text = row.insertCell(0);
+        text.innerHTML='<p>Reversed Seats: </p>';
+        let seatIds = row.insertCell(1);
+        seatIds.innerHTML = '';
+        for(i = 0; i < seats.split(",").length; i++){
+          loadSeatFromApi(seatIds, seats.split(",")[i])
+        }
+      }
+
+      function loadSeatFromApi(seatCell, seat_id){
+        $.ajax({
+          type: "GET",
+          url: "/api/seat.php",
+          dataType: 'json',
+          data: {
+            seat_id: seat_id,
+          },
+          success: function getSeat(seat){
+            console.log(seat)
+            seatCell.innerHTML+='<p>'+seat[0].seat_row+seat[0].seat_number+'</p>';
+          }
+        });
+      }
+
+      function pay(){
+        for(i = 0; i < seats.split(",").length; i++){
+          insertTickets(seats.split(",")[i])
+        }
+      }
+      
+      function insertTickets(seat_id){
+        $.ajax({
+          type: "POST",
+          url: "/api/ticket.php",
+          dataType: 'json',
+          data: {
+            showtime_id: showtime_id,
+            seat_id: seat_id,
+          },
+        });
+      }
+
+      loadInfoFromApi('table')
+      loadFoodInfo('table')
+      loadSeatsInfo('table')
+    </script>
+  </body>
+</html> 

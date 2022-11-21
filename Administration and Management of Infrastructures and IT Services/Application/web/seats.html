@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+
+      <!--favicon-->
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+  </head>
+  <body>
+    <div class="top_banner">
+      <a href="/">
+        <img src="images/logo_small.png" id="logo">
+      </a>
+    </div>
+
+    <div class="container" style='float:left'>
+      <form action="/pay.html" method="get" id="info">
+        <input type="hidden" name="showtime">
+        <input type="hidden" name="seatsNew" id="seatsNew">
+        <input type="hidden" id="priceValue" name="price">
+        <table id="table_info" class="table">
+          <thead>
+            <tr hidden>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr hidden>
+              <th></th>
+              <th></th>
+            </tr>
+          </tbody>
+        </table>
+        <table id="table_seats" class="table">
+          <thead>
+            <tr hidden>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr hidden>
+              <th></th>
+              <th></th>
+            </tr>
+          </tbody>
+        </table>
+        <table id="table_screen" class="table table-bordered">
+          <thead>
+            <tr hidden>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr hidden>
+              <th></th>
+              <th></th>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h3 id="price">Total: 0 &euro;</h3>
+        <input type="number" id="popcorn" name="popcorn" min="0" value="0" onchange="updatePrice('table')"><img class="seat" src="images/seats/popcorn.svg" />
+        <input type="number" id="drinks" name="drinks" min="0" value="0" onchange="updatePrice('table')"><img class="seat" src="images/seats/drinks.svg" />
+          <input type="submit" id="buy" value="next">
+      </form>
+    </div>
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const showtime_id = urlParams.get('showtime_id');
+      let choosenSeats = [];
+      let price = 0;
+      $("input[name='showtime']").val(showtime_id);
+
+      function loadInfoFromApi(tableId){
+        $.ajax({
+          type: "GET",
+          url: "/api/showtime.php",
+          dataType: 'json',
+          data: {
+            showtime_id: showtime_id,
+          },
+          success: function addSessionTime(showtime){
+            let tableRef = document.getElementById(tableId);
+            
+            let infoRow = tableRef.insertRow(-1);
+            let timeCell = infoRow.insertCell(0);
+            timeCell.innerHTML='<h3>'+showtime[0].showtime+'</h3>';
+
+            loadCinemaFromApi(infoRow, showtime[0].cinema_id);
+          }
+        });
+      }
+
+      function loadCinemaFromApi(infoRow, cinema_id){
+        $.ajax({
+          type: "GET",
+          url: "/api/cinemas.php",
+          dataType: 'json',
+          data: {
+            cinema_id: cinema_id,
+          },
+          success: function addCinema(cinema){
+            let cinCell = infoRow.insertCell(1);
+            cinCell.innerHTML='<h3>'+cinema[0].name+'</h3>';
+          }
+        });
+      }
+
+      function loadSeatsFromApi(tableId){
+        $.ajax({
+          type: "GET",
+          url: "/api/seat.php",
+          dataType: 'json',
+          data: {
+            showtime_id: showtime_id,
+          },
+          success: function addSeats(seats){
+            let tableRef = document.getElementById(tableId);
+
+            let last=seats.length-1;
+            let rows=parseInt(seats[last].seat_row, 36)-9;
+            let cols=seats[last].seat_number;
+
+            seat=0;
+            for (r = 1; r <= rows; r++) {
+              let row = tableRef.insertRow(-1);
+              for (c = 1; c <= cols; c++) {
+                let cell = row.insertCell(c-1);
+                cell.innerHTML='<center><img class="checkable, seat" src="images/seats/taken.svg" /></center>';
+                cell.setAttribute("id", seats[seat].id);
+                row.appendChild(cell);
+                seat+=1;
+              };
+            };
+          }
+        });
+        loadAvailableSeatsFromApi();
+      }
+
+      function loadAvailableSeatsFromApi(){
+        $.ajax({
+          type: "GET",
+          url: "/api/seat.php",
+          dataType: 'json',
+          data: {
+            showtime_id: showtime_id,
+            available: true,
+          },
+          success: function addSeats(seats){
+            for (oldSeat of seats) {
+              let seat = document.getElementById(oldSeat.id);
+              seat.innerHTML='<center><input type="hidden" type="checkbox" name="seats" value="'+oldSeat.id+'"><img id="seat'+oldSeat.id+'" class="seat" onclick="updateSeat(\'table\', '+oldSeat.id+')" src="images/seats/available.svg" /></input></center>';
+            };
+          }
+        });
+      }
+
+      function updateSeat(tableId, seat_id) {
+        let img = document.getElementById("seat"+seat_id);
+        if (choosenSeats.includes(seat_id)) { //remove seat
+          img.src='images/seats/available.svg';
+          choosenSeats = choosenSeats.filter(function(s) { return s !== seat_id })
+        }
+        else { //add seat
+          img.src='images/seats/choosen.svg';
+          choosenSeats.push(seat_id);
+        }
+        updatePrice();
+      }
+      
+      function updatePrice(){
+        price = 10*choosenSeats.length + parseInt($("#popcorn").val())*2 + parseInt($("#drinks").val())*3;
+        let price_element = document.getElementById("price");
+        price_element.innerHTML="Total: "+price+'&euro;';
+        document.getElementById("seatsNew").value=choosenSeats;
+        document.getElementById("priceValue").value=price;
+      }
+
+      function loadScreen(tableId) {
+        let tableRef = document.getElementById(tableId);
+        let screenRow = tableRef.insertRow(-1);
+        let screenCell = screenRow.insertCell(0);
+        screenCell.innerHTML='<center><h5>Screen</h5></center>';
+
+      }
+
+      loadInfoFromApi('table_info')
+      loadSeatsFromApi('table_seats')
+      loadScreen('table_screen')
+
+    </script>
+  </body>
+</html> 

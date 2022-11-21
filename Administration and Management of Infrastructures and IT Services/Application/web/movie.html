@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+
+      <!--favicon-->
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  
+  </head>
+  <body>
+    <div class="top_banner">
+      <a href="/">
+        <img src="images/logo_small.png" id="logo">
+      </a>
+    </div>
+
+	  <div style='float:left' id="poster">
+    </div>
+
+    <div class="container" style='float:leftt'>          
+      <table id="moviesTb" class="table table-hover row-clickable">
+        <thead>
+          <tr hidden>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const movie_id = urlParams.get('movie_id');
+
+      function openSessionPage(id) {
+        window.location.assign("/seats.html?showtime_id=" + id);
+      }
+
+      function loadMovieFromApi(posterId, tableId){
+        $.ajax({
+          type: "GET",
+          url: "/api/movie.php",
+          dataType: 'json',
+          data: {
+            cinema_id: $('#cinema-picker').val(),
+            movie_id: movie_id,
+          },
+          success: function addInfo(movie){
+            let tableRef = document.getElementById(tableId);
+            
+            let posterRow = tableRef.insertRow(-1);
+            let posterCell = posterRow.insertCell(0);
+            let poster = movie[0].poster;
+            posterCell.innerHTML='<img class="poster" src="'+poster+'">';
+
+            let descRow = tableRef.insertRow(-1);
+            let descriptionCell = descRow.insertCell(0);
+            let description = movie[0].description; 
+            descriptionCell.innerHTML='<h3>'+description+'</h3>';
+          }
+        });
+      }
+
+      function loadCinemasFromApi(tableId){
+        $.ajax({
+          type: "GET",
+          url: "/api/cinemas.php",
+          dataType: 'json',
+          success: function addRow(cinemas){
+            var tmp = ""
+            let tableRef = document.getElementById(tableId);
+            
+            let cinRow = tableRef.insertRow(-1);
+            let cinemaCell = cinRow.insertCell(0);
+            tmp='<select id="cinema-picker" name="cinema-picker" onchange="loadSessionsFromApi(\'moviesTb\')" required>'
+            tmp+='<option value="" selected disabled hidden>Choose you prefered cinema</option>'
+            for(var i = 0; i < cinemas.length; i++){  
+              let cinema = cinemas[i].name;
+              tmp+='<option value="'+cinemas[i].id+'">'+cinema+'</option>';
+            }
+            cinemaCell.innerHTML=tmp+'</select>';
+          }
+        });
+      }
+
+      function loadSessionsFromApi(tableId){
+        $.ajax({
+          type: "GET",
+          url: "/api/showtime.php",
+          dataType: 'json',
+          data: {
+            movie_id: movie_id,
+            cinema_id: $('#cinema-picker').val(),
+          },
+          success: function addRow(sessions){
+            let tableRef = document.getElementById(tableId);
+
+            while(tableRef.rows.length-1 > 3){
+              tableRef.deleteRow(-1);
+            }
+            
+            for(session of sessions) {
+              let sesRow = tableRef.insertRow(-1);
+              sesRow.setAttribute("id","line" + session.id);
+              sesRow.setAttribute("onclick", "openSessionPage(" + session.id + ")");
+
+              let sessionCell = sesRow.insertCell(0);
+              sessionCell.innerHTML+='<p>'+session.showtime+'</p>';
+            }
+          }
+        });
+      }
+
+      loadMovieFromApi('poster', 'moviesTb')
+      loadCinemasFromApi('moviesTb')
+    </script>
+  </body>
+</html> 

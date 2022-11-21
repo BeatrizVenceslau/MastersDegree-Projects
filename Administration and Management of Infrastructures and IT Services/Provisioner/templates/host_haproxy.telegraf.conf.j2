@@ -1,0 +1,41 @@
+# Configuration for telegraf agent
+[agent]
+  interval = "10s"
+  round_interval = true
+  metric_batch_size = 1000
+  metric_buffer_limit = 10000
+  collection_jitter = "0s"
+  flush_interval = "10s"
+  flush_jitter = "0s"
+  precision = ""
+  hostname = ""
+  omit_hostname = false
+[[outputs.influxdb_v2]]
+  urls = ["{{ mon_protocol }}{{ hostvars['mon']['ansible_default_ipv4']['address'] }}:{{ mon_port }}"]
+  token = "{{ mon_token }}"
+  organization = "{{ mon_org }}"
+  bucket = "{{ mon_bucket }}"
+[[inputs.cpu]]
+  percpu = true
+  totalcpu = true
+  collect_cpu_time = false
+  report_active = false
+[[inputs.disk]]
+  ignore_fs = ["tmpfs", "devtmpfs", "devfs", "iso9660", "overlay", "aufs", "squashfs"]
+[[inputs.diskio]]
+  # no configuration
+[[inputs.mem]]
+  # no configuration
+[[inputs.net]]
+  # interfaces = ["eth0"]
+  # ignore_protocol_stats = false
+[[inputs.processes]]
+  # no configuration
+[[inputs.swap]]
+  # no configuration
+[[inputs.system]]
+  ## Uncomment to remove deprecated metrics.
+  # fielddrop = ["uptime_format"]
+
+[[inputs.haproxy]]
+  servers = ["http://localhost/haproxy?stats"]

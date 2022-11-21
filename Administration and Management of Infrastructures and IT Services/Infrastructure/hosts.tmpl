@@ -1,0 +1,39 @@
+# file: gcphosts
+# for GCP tenant hosts file
+
+%{ for name, ip in hosts }
+${name}     ansible_host=${ip} ansible_user=ubuntu ansible_connection=ssh
+%{ endfor ~}
+
+
+[osmgmt]
+localhost           ansible_connection=local
+
+[webfront]
+%{ for name, ip in web-hosts-front }
+${name}
+%{ endfor ~}
+[webback]
+%{ for name, ip in web-hosts-back }
+${name}
+%{ endfor ~}
+
+[loadbal]
+balancer
+
+[database]
+db
+
+[monitoring]
+mon
+
+[targets]
+balancer
+db
+mon
+%{ for name, ip in web-hosts-front }
+${name}
+%{ endfor ~}
+%{ for name, ip in web-hosts-back }
+${name}
+%{ endfor ~}

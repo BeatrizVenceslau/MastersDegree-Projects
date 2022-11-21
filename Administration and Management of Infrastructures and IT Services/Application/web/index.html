@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    
+    <!--favicon-->
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  </head>
+  <body>
+    <div class="top_banner">
+      <a href="/">
+        <img src="images/logo_small.png" id="logo">
+      </a>
+    </div>
+
+    <div class="container">          
+      <table id="moviesTb" class="table table-hover row-clickable">
+        <thead>
+          <tr hidden>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr hidden>
+            <th></th>
+            <th></th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script>
+      function openMoviePage(id) {
+        window.location.assign("/movie.html?movie_id=" + id);
+      }
+
+      function loadFromApi(tableId){
+        $.ajax({
+          type: "GET",
+          url: "/api/movie.php",
+          dataType: 'json',
+          success: function addRow(movies) {
+            let tableRef = document.getElementById(tableId);
+
+            for (movie of movies) {
+              let newRow = tableRef.insertRow(-1); // inserts new row at last position
+              newRow.setAttribute("id","line" + movie.id);
+              newRow.setAttribute("onclick", "openMoviePage(" + movie.id + ")");
+              
+              let posterCell = newRow.insertCell(0);
+              posterCell.innerHTML='<img class="poster" src="'+movie.poster+'">';
+              
+              let contentCell = newRow.insertCell(1);
+              let title = movie.title; 
+              let description = movie.description; 
+              contentCell.innerHTML='<h3>'+title+'</h3>'+'<p>'+description+'</p>';
+            }
+          }
+        });
+      }
+
+      loadFromApi('moviesTb')
+    </script>
+  </body>
+</html> 

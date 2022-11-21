@@ -1,0 +1,10 @@
+db_user: ticketmaster
+db_pass: popcorn123
+db_name: movies_db
+mon_port: 8086
+mon_protocol: http://
+mon_user: TheWatcher
+mon_pass: BE*$!Nu45ouDPJ!RbJ
+mon_org: team-13
+mon_bucket: hosts
+mon_token: RNMd7QV0ZR1B2oCeBqMZ-I001Dthp2MDAS8uZUXbSwQNiXgrdOujyCbrDQOEr9PuswkHU2Qkb5IxVkebBha1SA==

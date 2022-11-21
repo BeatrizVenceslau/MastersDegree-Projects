@@ -1,0 +1,447 @@
+---
+# file: vmcloud-site-servers-setup-all.yml
+# configures the server instances
+# This Playbook has Three Plays: one for critical configurations in all servers
+# A second one for installing software in web servers
+# a third one to install software in the Load Balancer server
+
+# This First Play Sets up critical configuration on servers
+- hosts: targets
+  # as the systems are not yet "known" by Ansible Facts cannot be gathered yet
+  gather_facts: no
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
+
+  pre_tasks:
+    # To operate remotely in critical files without direct user input
+    - name: Remove require tty - alt
+      lineinfile:
+        regexp: "requiretty"
+        dest: /etc/sudoers.d/os_defaults
+        state: absent
+    # Giving permissions in sudoers for system critical files (see https://docs.ansible.com/ansible/latest/modules/lineinfile_module.html)
+    - name: Validate the sudoers file before saving not to require password
+      lineinfile:
+        dest: /etc/sudoers
+        state: present
+        regexp: '^%ADMIN ALL='
+        line: '%ADMIN ALL=(ALL) NOPASSWD: ALL'
+        validate: /usr/sbin/visudo -cf %s
+  tasks:
+    - name: Import InfluxDB GPG signing key
+      apt_key: url=https://repos.influxdata.com/influxdb.key state=present
+    - name: Add InfluxDB repository
+      apt_repository: repo='deb https://repos.influxdata.com/ubuntu trusty stable' state=present
+    - name: Install Telegraf package
+      apt: name=telegraf state=present
+
+- hosts: monitoring
+  gather_facts: true
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
+
+  tasks:
+    - name: Import InfluxDB GPG signing key
+      apt_key: url=https://repos.influxdata.com/influxdb.key state=present
+    - name: Add InfluxDB repository
+      apt_repository: repo='deb https://repos.influxdata.com/ubuntu trusty stable' state=present
+    - name: Install InfluxDB packages
+      apt: name=influxdb2 state=present    
+    #Grafana https://citizix.com/how-to-install-and-set-up-grafana-in-ubuntu-20-04-using-ansible/
+    - name: Install required packages for Grafana
+      apt:
+        name:
+          - gnupg2
+          - curl
+          - software-properties-common
+        state: present
+    - name: Import Grafana GPG signing key
+      apt_key: url=https://packages.grafana.com/gpg.key state=present
+    - name: Add Grafana repository
+      apt_repository: repo='deb https://packages.grafana.com/oss/deb stable main' state=present
+    - name: Install the grafana package
+      apt:
+        name: grafana
+        state: present
+    - name: start and enable InfluxDB service
+      service:
+        name: influxdb
+        state: started
+        enabled: yes
+    #https://docs.influxdata.com/influxdb/v2.4/reference/cli/influx/setup/
+    - name: check if influx is configured
+      stat:
+        path: '/root/influx-config.team13'
+      register: influxdb_configured
+    - name: Execute InfluxDB config
+      shell: "influx setup --org {{ mon_org }} --bucket {{ mon_bucket }} --username {{ mon_user }} --password '{{ mon_pass }}' --token '{{ mon_token }}' --retention 0 --force && touch '/root/influx-config.team13'"
+      when: influxdb_configured.stat.exists == false
+    - name: start and enable Grafana service
+      service:
+        name: grafana-server
+        state: started
+        enabled: yes
+    - name: set grafana login
+      shell: "grafana-cli admin reset-admin-password '{{ mon_pass }}'"
+      run_once: true
+    - name: Set Grafana DataSource (InfluxDB)
+      grafana_datasource:
+        ds_type: influxdb
+        ds_url: "{{ mon_protocol }}localhost:{{ mon_port }}"
+        is_default: true
+        name: influxdb
+        url: "http://localhost:3000"
+        url_password : '{{ mon_pass }}'
+        additional_json_data: {'version': 'Flux', 'organization': '{{ mon_org }}', 'defaultBucket': '{{mon_bucket}}'}
+        enforce_secure_data: true
+        additional_secure_json_data: {'token': '{{ mon_token }}'}
+      run_once: true
+    - name: Copy Telegraf Config
+      template:
+        src: ./templates/host.telegraf.conf.j2
+        dest: /etc/telegraf/telegraf.conf
+    - name: Start Enable Telegraf
+      service:
+        name: telegraf
+        state: restarted
+        enabled: yes      
+      register: mon_datasource_uid
+    - name: copy haproxy dasboard
+      copy: 
+        src: ./templates/HAproxy_metric_eng-1667412496040.json
+        dest: /tmp/HAproxy_metric_eng-1667412496040.json
+    - name: copy Nginx dasboard
+      copy: 
+        src: ./templates/Super_Simple_Nginx_Dashboard-1667412536571.json
+        dest: /tmp/Super_Simple_Nginx_Dashboard-1667412536571.json
+    - name: copy System dasboard
+      copy: 
+        src: ./templates/Linux_System_Dashboard-1667412508027.json
+        dest: /tmp/Linux_System_Dashboard-1667412508027.json
+    - name: copy Mysql dasboard
+      copy: 
+        src: ./templates/MySQL-1667424071167.json
+        dest: /tmp/MySQL-1667424071167.json
+    - name: Import Grafana dashboard haproxy
+      grafana_dashboard:
+        grafana_url: http://{{ hostvars['mon']['ansible_facts'][ansible_default_ipv4.interface].ipv4.address }}:3000
+        grafana_user: "admin"
+        grafana_password: "{{ mon_pass }}"
+        state: present
+        commit_message: Updated by ansible
+        overwrite: yes
+        path: /tmp/HAproxy_metric_eng-1667412496040.json
+    - name: Import Grafana dashboard nginx
+      grafana_dashboard:
+        grafana_url: http://{{ hostvars['mon']['ansible_facts'][ansible_default_ipv4.interface].ipv4.address }}:3000
+        grafana_user: "admin"
+        grafana_password: "{{ mon_pass }}"
+        state: present
+        commit_message: Updated by ansible
+        overwrite: yes
+        path: /tmp/Super_Simple_Nginx_Dashboard-1667412536571.json
+    - name: Import Grafana dashboard system
+      grafana_dashboard:
+        grafana_url: http://{{ hostvars['mon']['ansible_facts'][ansible_default_ipv4.interface].ipv4.address }}:3000
+        grafana_user: "admin"
+        grafana_password: "{{ mon_pass }}"
+        state: present
+        commit_message: Updated by ansible
+        overwrite: yes
+        path: /tmp/Linux_System_Dashboard-1667412508027.json
+    - name: Import Grafana dashboard mysql
+      grafana_dashboard:
+        grafana_url: http://{{ hostvars['mon']['ansible_facts'][ansible_default_ipv4.interface].ipv4.address }}:3000
+        grafana_user: "admin"
+        grafana_password: "{{ mon_pass }}"
+        state: present
+        commit_message: Updated by ansible
+        overwrite: yes
+        path: /tmp/MySQL-1667424071167.json
+
+- hosts: database
+  gather_facts: true
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
+
+  tasks:
+    - name: Installing Mysql and dependencies
+      package:
+        name: "{{item}}"
+        state: present
+        update_cache: yes
+      loop:
+        - mysql-server
+        - mysql-client 
+        - python3-mysqldb
+        - libmysqlclient-dev
+      become: yes
+    - name: start and enable mysql service
+      service:
+        name: mysql
+        state: started
+        enabled: yes
+    - name: creating mysql user (ticketmaster)
+      mysql_user:
+        name: "{{ db_user }}"
+        password: "{{ db_pass }}"
+        priv: '*.*:ALL'
+        host: '%'
+        state: present
+    - name: creating cinema_db
+      mysql_db:
+        name: "{{ db_name }}"
+        state: present
+    - name: add schema to database  
+      copy: 
+        src: ../Stock-Database/stock-database.sql
+        dest: /tmp/schema.sql
+    - name: add sample data to database  
+      copy: 
+        src: ../Stock-Database/dump.sql
+        dest: /tmp/dump.sql
+    - name: insert sample data into database  
+      mysql_db: 
+        name: "{{ db_name }}"
+        state: import
+        target: /tmp/schema.sql
+    - name: insert sample data into database  
+      mysql_db: 
+        name: "{{ db_name }}"
+        state: import
+        target: /tmp/dump.sql
+    - name: Enable remote login to mysql
+      lineinfile:
+        path: /etc/mysql/mysql.conf.d/mysqld.cnf
+        regexp: '^bind-address'
+        line: 'bind-address = 0.0.0.0'
+        backup: yes
+      notify:
+        - Restart mysql
+    - name: Copy Telegraf Config
+      template:
+        src: ./templates/host_mysql.telegraf.conf.j2
+        dest: /etc/telegraf/telegraf.conf
+    - name: Start Enable Telegraf
+      service:
+        name: telegraf
+        state: restarted
+        enabled: yes
+  handlers:
+    - name: Restart mysql
+      service:
+        name: mysql
+        state: restarted
+
+# This Second Play installs the required software in web servers
+# tasks names are self explanatory
+- hosts: webback
+  gather_facts: true
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
+
+  tasks:
+    - name: Add NGINX Repository
+      apt_repository:
+        repo: ppa:nginx/stable
+        state: present
+
+    - name: install nginx
+      apt:
+        pkg: nginx
+        state: present
+      register: conf_nginx
+    - debug:
+        var: conf_nginx
+
+    - name: install php
+      apt:
+        pkg: php7.4-fpm
+        state: present
+
+    - name: install php-mysqli
+      apt:
+        pkg: php7.4-mysql
+        state: present
+
+    - name: Ensure php-fpm is enabled on boot.
+      service:
+        name: php7.4-fpm
+        state: started
+        enabled: yes
+
+    - name: write our nginx.conf
+      template:
+        src: ./templates/nginx.conf.j2
+        dest: /etc/nginx/nginx.conf
+      notify: restart nginx
+
+    - name: write our /etc/nginx/sites-available/default
+      template:
+        src: ./templates/default-site-backend.j2
+        dest: /etc/nginx/sites-available/default
+      notify: restart nginx
+
+    - name: copy application
+      copy:
+        src: ../Application/api
+        dest: /opt/Application
+
+    - name: DB connection to backend
+      template:
+        src: ./templates/conn.php.j2
+        dest: /opt/Application/api/conn.php
+
+    - name: Copy Telegraf Config
+      template:
+        src: ./templates/host_nginx.telegraf.conf.j2
+        dest: /etc/telegraf/telegraf.conf
+    - name: Start Enable Telegraf
+      service:
+        name: telegraf
+        state: restarted
+        enabled: yes
+
+  # The handler is common to the nginx installation steps
+  handlers:
+    - name: restart nginx
+      service:
+        name: nginx
+        state: restarted
+
+- hosts: webfront
+  gather_facts: true
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
+
+  tasks:
+    - name: Add NGINX Repository
+      apt_repository:
+        repo: ppa:nginx/stable
+        state: present
+
+    - name: install nginx
+      apt:
+        pkg: nginx
+        state: present
+      register: conf_nginx
+    - debug:
+        var: conf_nginx
+
+    - name: write our nginx.conf
+      template:
+        src: ./templates/nginx.conf.j2
+        dest: /etc/nginx/nginx.conf
+      notify: restart nginx
+
+    - name: write our /etc/nginx/sites-available/default
+      template:
+        src: ./templates/default-site-frontend.j2
+        dest: /etc/nginx/sites-available/default
+      notify: restart nginx
+
+    - name: copy application
+      copy:
+        src: ../Application/web
+        dest: /opt
+
+    - name: Copy Telegraf Config
+      template:
+        src: ./templates/host_nginx.telegraf.conf.j2
+        dest: /etc/telegraf/telegraf.conf
+    - name: Start Enable Telegraf
+      service:
+        name: telegraf
+        state: restarted
+        enabled: yes
+
+  # The handler is common to the nginx installation steps
+  handlers:
+    - name: restart nginx
+      service:
+        name: nginx
+        state: restarted
+
+# This Third Play install the required software in the Load Balancer
+- hosts: loadbal
+  gather_facts: true
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
+
+  tasks:
+    # as there is no internal DNS service, we need to populate theb /etc/hosts
+    - name: update /etc/hosts file for name resolution of self
+      lineinfile:
+        dest: /etc/hosts
+        regexp: '.*{{ item }}$'
+        line: "127.0.0.1 {{item}}"
+        state: present
+      with_items: balancer
+    # as there is no internal DNS service, we need to populate the /etc/hosts
+    - name: update /etc/hosts file for name resolution frontend
+      lineinfile:
+        dest: /etc/hosts
+        regexp: '.*{{ item }}$'
+        line: "{{ hostvars[item]['ansible_default_ipv4']['address'] }} {{item}}"
+        state: present
+      when: hostvars[item]['ansible_default_ipv4']['address'] is defined
+      with_items: '{{groups.webfront}}'
+    # as there is no internal DNS service, we need to populate the /etc/hosts
+    - name: update /etc/hosts file for name resolution backend
+      lineinfile:
+        dest: /etc/hosts
+        regexp: '.*{{ item }}$'
+        line: "{{ hostvars[item]['ansible_default_ipv4']['address'] }} {{item}}"
+        state: present
+      when: hostvars[item]['ansible_default_ipv4']['address'] is defined
+      with_items: '{{groups.webback}}'
+
+    - name: install haproxy and socat
+      apt:
+        pkg: ['haproxy', 'socat']
+        state: latest
+
+    - name: enable haproxy
+      lineinfile:
+        path: /etc/default/haproxy
+        regexp: "^ENABLED.+$"
+        line: "ENABLED=1"
+        state: present
+
+    - name: deploy haproxy config
+      template:
+        src: ./templates/haproxy.cfg.j2
+        dest: /etc/haproxy/haproxy.cfg
+        mode: 0644
+        validate: haproxy -f %s -c -q
+      notify: restart haproxy
+
+    - name: Ensure HAProxy is started and enabled on boot.
+      service:
+        name: haproxy
+        state: started
+        enabled: yes
+    
+    - name: Copy Telegraf Config
+      template:
+        src: ./templates/host_haproxy.telegraf.conf.j2
+        dest: /etc/telegraf/telegraf.conf
+    - name: Start Enable Telegraf
+      service:
+        name: telegraf
+        state: restarted
+        enabled: yes
+
+# The handler is common to the nginx installation steps
+  handlers:
+
+  - name: restart haproxy
+    service:
+      name: haproxy
+      state: restarted

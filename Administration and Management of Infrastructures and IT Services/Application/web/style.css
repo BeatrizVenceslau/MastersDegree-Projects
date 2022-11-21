@@ -1,0 +1,50 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+}
+.top_banner {
+  height: 115px;
+  background: rgba(37,155,179,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.no-style {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.no-style:hover {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+.poster {
+  width: 252px;
+}
+
+#logo {
+  height: 115px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html {
+  overflow-y:scroll;
+}
+
+tr {
+    cursor: hand;
+    cursor: pointer;
+}
+
+.seat {
+  width: 30px;
+}

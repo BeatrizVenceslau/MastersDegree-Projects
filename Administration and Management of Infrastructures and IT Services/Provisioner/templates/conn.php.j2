@@ -1,0 +1,9 @@
+<?php // {{ ansible_managed }}
+    $servername = "{{ hostvars['db']['ansible_default_ipv4']['address'] }}";
+    $username = "{{ db_user }}";
+    $password = "{{ db_pass }}";
+    $dbname = "{{ db_name }}";	
+
+    $conn = mysqli_init();
+    $conn->real_connect($servername, $username, $password, $dbname);
+?>
