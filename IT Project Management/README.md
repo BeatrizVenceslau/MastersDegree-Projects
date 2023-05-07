@@ -4,4 +4,4 @@ The goal was to present a project proposal along with an internal evaluation of 
  
 2nd Year, 2nd Semester
  
- *Subject chosen under the Enterprise Systems specialization course*
+ *Subject chosen under the **Enterprise Systems** specialization course*
