@@ -3,4 +3,4 @@ Developing prototypes for a platform (in our case an app) to solve a selected is
 
 2nd Year, 1st Semester
 
-*Subject chosen as an **Optional Subject**. *
+*Subject chosen as one **Optional Subject** out of four *
